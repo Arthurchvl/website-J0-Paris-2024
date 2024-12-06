@@ -10,7 +10,7 @@ footer{
     color: white;
 }
 
-footer+section+article{
+footer+article{
     display: flex;
     flex-direction: row;
 }
