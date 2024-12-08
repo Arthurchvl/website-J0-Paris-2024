@@ -1,3 +1,40 @@
 section {
     background-color: #E3D2C1;
+    border-radius: 10px;
+    margin: 20px;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-bottom: 40px;
+    padding-top: 50px;
+}
+
+.origineJudo {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+}
+
+.judoJo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+table {
+    background: linear-gradient(to top right, #3E405C, #8386C2);
+    width: 1320px;
+    height: 1280px;
+    border-radius: 10px;
+    padding: 40px
+}
+table thead {
+    background: linear-gradient(to top right, #8386C2, #3E405C);
+    border-radius: 10px;
+    
+    height: 155px;
+    display: inline-table;
+
+    border: solid 3px;
+    border-color: #E3D2C1;
+    width: 1000px;
 }
