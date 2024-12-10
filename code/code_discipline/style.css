@@ -1,3 +1,8 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+}
+
 section {
     background-color: #E3D2C1;
     border-radius: 10px;
@@ -37,4 +42,29 @@ table thead {
     border: solid 3px;
     border-color: #E3D2C1;
     width: 1000px;
+}
+
+main > div {
+    background: linear-gradient(to right, #3E405C, #8386C2);
+    display: flex;
+    position: sticky;
+    top: 0px;
+    margin: 0px;
+    height: 100px;
+}
+
+h1 {
+    font-family: "Cormorant", serif;
+    font-size: 42px;
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+section article {
+    border-radius: 10px;
+    border-color: linear-gradient(to right, #3E405C, #8386C2) ;
 }
