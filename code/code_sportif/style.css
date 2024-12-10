@@ -6,19 +6,26 @@ footer {
     padding: 20px 0;
 }
 
-footer section {
+footer aside {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
     width: 80%;
     margin: auto;
+    margin-top: 20px;
+    font-size: 14px;
 }
 
 footer nav {
     display: flex;
     flex-direction: column;
     text-align: left;
+}
+
+footer aside img{
+    width: 200px;
+    height: 200px;
 }
 
 footer nav h3 {
@@ -37,14 +44,11 @@ footer nav ul li {
     font-size: 14px;
 }
 
-footer img {
+footer div>img {
     width: 24px;
     height: 24px;
-    margin: 0 10px;
+    margin: 0 2px;
 }
-
-footer p {
-    margin-top: 20px;
+footer>p, footer>div{
     text-align: center;
-    font-size: 14px;
 }
