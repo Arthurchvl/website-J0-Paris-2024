@@ -31,47 +31,10 @@
                     </figure>
                 </div>
             </section>
-            <div class="caption">Cérémonie D'ouverture</div>
-    <div class="carousel">
-        <div class="carousel-images" id="carousel-images">
-            <img src="images/beach_volley.png" alt="Cérémonie d'ouverture">
-            <img src="images/carte_sites_olympiques.png" alt="Image 2">
-            <img src="images/" alt="Image 3">
-        </div>
-        <div class="carousel-buttons">
-            <button onclick="prevSlide()">&#8249;</button>
-            <button onclick="nextSlide()">&#8250;</button>
-        </div>
-    </div>
-    <script>
-        let currentIndex = 0;
-        const images = document.getElementById('carousel-images');
-        const totalImages = images.children.length;
-
-        function updateCarousel() {
-            const offset = -currentIndex * 100;
-            images.style.transform = `translateX(${offset}%)`;
-        }
-
-        function nextSlide() {
-            currentIndex = (currentIndex + 1) % totalImages;
-            updateCarousel();
-        }
-
-        function prevSlide() {
-            currentIndex = (currentIndex - 1 + totalImages) % totalImages;
-            updateCarousel();
-        }
-    </script>
-        <section>
-            <h2>Le Parcours de la flamme</h2>
-            <img src="images/parcours flamme olympique.png" alt="Carte parcours olympique">
-        </section>
-
         </main>
         <footer>
             <aside>
-                <img src="images/" alt = "logo JO Blanc" title="logo JO Blanc">
+                <img src="images/logoJoHeader1.png" alt = "logo JO Blanc" title="logo JO Blanc">
                 <nav>
                     <h3>Jeux olympiques</h3>
                     <ul>
@@ -103,7 +66,7 @@
                 <img src="images/logoFacebookNoir.png" alt="Facebook" title="logo Facebook">
                 <img src="images/logoYoutubeNoir.png" alt="YouTube" title="logo YouTube">
                 <img src="images/logoTiktokNoir.png" alt="TikTok" title="logo TikTok">
-                <img src="images/logoLinkedinNoir.png" alt="Linkedin" title="logo Linkedin">
+                <img src="/images/logoLinkedinNoir.png" alt="Linkedin" title="logo Linkedin">
             </div>
             <hr>
             <p>Chauvel Arthur - Delage Clément - Le Chevère Yannis - Le Sech Marceau</p>
