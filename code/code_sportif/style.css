@@ -143,3 +143,26 @@ footer a {
     text-decoration: none;
     color: white;
 }
+
+main section aside img {
+    display: inline-block;
+    width: 20%;
+    margin: 0px;
+    padding: 0px;
+}
+
+main section:last-child aside:last-child {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+main section:last-child {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+main section:last-child aside {
+    border-radius: 10px;
+    padding: 10px;
+}
