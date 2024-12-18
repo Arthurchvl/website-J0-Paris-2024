@@ -137,3 +137,76 @@ section article {
     width: 111px;
     z-index: 5;
 }
+
+section:nth-child(3) article {
+    border: 5px solid ;
+    border-image: linear-gradient(#3E405C, #8386C2, black, white) 1;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    padding: 20px 0;
+}
+
+footer aside {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+footer aside img{
+    width: 200px;
+    height: 200px;
+}
+
+footer nav h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+footer div>img {
+    width: 24px;
+    height: 24px;
+    margin: 0 2px;
+}
+
+footer>p, footer>div{
+    text-align: center;
+}
+
+
