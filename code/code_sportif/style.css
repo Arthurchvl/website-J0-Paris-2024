@@ -21,18 +21,6 @@ header {
     justify-content: space-between;
 }
 
-section {
-    width: 100%;
-    background-color: #e3d2c1;
-    color: black;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 footer {
     background-color: black;
     color: white;
@@ -62,7 +50,7 @@ footer nav {
     text-align: left;
 }
 
-footer aside img {
+footer aside a {
     width: 200px;
     height: 200px;
 }
@@ -83,14 +71,38 @@ footer nav ul li {
     font-size: 14px;
 }
 
-footer div>img {
+footer div>a {
     width: 24px;
     height: 24px;
     margin: 0 10px;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+footer div {
+    align-items: center;
+    justify-content: space-between;
 }
 
 footer>p, footer>div {
     text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+section {
+    width: 100%;
+    background-color: #e3d2c1;
+    color: black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 video {
@@ -156,16 +168,13 @@ article ul li {
     margin: 5px 0;
 }
 
-footer a {
-    text-decoration: none;
-    color: white;
-}
-
-main section aside img {
+main section aside a {
     display: inline-block;
-    width: 20%;
+    width: auto;
     margin: 0px;
     padding: 0px;
+    text-decoration: none;
+    color: black;
 }
 
 main section:last-child aside:last-child {
@@ -182,10 +191,17 @@ main section:last-child {
 }
 
 main section:last-child aside:last-child img {
-    width: 200px;
+    width: 100px;
     height: auto;
     align-items: center;
     margin: 20px;
+}
+
+main section:last-child{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: white;
 }
 
 main>section:first-of-type {
