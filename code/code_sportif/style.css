@@ -1,4 +1,6 @@
-/* Caractéristiques de la page sportif */
+/******************************************* 
+Caractéristiques globales de la page sportif
+*******************************************/
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
@@ -7,7 +9,9 @@ body {
     width: 1440px;
 }
 
-/* Caractéristiques du header de la page sportif */
+/********************************************
+Caractéristiques du header de la page sportif
+********************************************/
 header {
     background-image: url(images/imagesHeader.png);
     background-repeat: no-repeat;
@@ -23,7 +27,9 @@ header {
     justify-content: space-between;
 }
 
-/* Caractéristiques du footer de la page sportif */
+/********************************************
+Caractéristiques du footer de la page sportif
+********************************************/
 footer {
     background-color: black;
     color: white;
@@ -96,7 +102,9 @@ footer a {
     color: white;
 }
 
-/* Caractéristiques du main de la page sportif */
+/*******************************************************
+Caractéristiques des sections du main de la page sportif
+*******************************************************/
 section {
     width: 100%;
     background-color: #e3d2c1;
@@ -109,6 +117,9 @@ section {
     justify-content: center;
 }
 
+/*********************************************
+Caractéristiques des vidéos de la page sportif
+*********************************************/
 video {
     display: flex;
     align-items: center;
@@ -119,10 +130,10 @@ video {
     padding: 20px;
 }
 
+/*************************************************************************
+Caractéristiques de la section performances de carrière de la page sportif
+*************************************************************************/
 main aside{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     background-color: #e3d2c1;
     color: black;
     border-radius: 10px;
@@ -174,6 +185,9 @@ article ul li {
     margin: 5px 0;
 }
 
+/*****************************************************************************
+Caractéristiques de la section actualités + réseaux sociaux de la page sportif
+*****************************************************************************/
 main section aside a {
     display: inline-block;
     width: auto;
@@ -181,6 +195,10 @@ main section aside a {
     padding: 0px;
     text-decoration: none;
     color: black;
+}
+
+main section:last-child h2{
+    text-align: center;
 }
 
 main section:last-child aside:last-child {
@@ -201,7 +219,7 @@ main section:last-child aside:last-child img {
     width: 100px;
     height: auto;
     align-items: center;
-    margin: 20px;
+    padding: 20px;
 }
 
 main section:last-child{
@@ -209,8 +227,12 @@ main section:last-child{
     flex-direction: row;
     flex-wrap: nowrap;
     background-color: white;
+    margin: 0px;
 }
 
+/****************************************************************************
+Caractéristiques de la section biographie + fiche identité de la page sportif
+****************************************************************************/
 main>section:first-of-type {
     display: flex;
     flex-direction: row;
@@ -250,6 +272,9 @@ main>section:first-of-type aside li {
     margin: 10px;
 }
 
+/*********************************************************
+Caractéristiques de la section palmarès de la page sportif
+*********************************************************/
 main>section:nth-child(2){
     display: flex;
     flex-direction: row;
