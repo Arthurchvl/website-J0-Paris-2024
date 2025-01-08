@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Epreuves Du Judo Au JO</title>
+    <style>
+        /* ... [Garder les styles précédents jusqu'à .card] ... */
+
+        .card {
+            position: relative;
+            padding: 25px;
+            background-color: #fff;
+            border-radius: 12px;
+        }
+
+        /* Ajout des nouveaux styles pour la mise en page flexbox */
+        .card-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .text-content {
+            flex: 1; /* Prend l'espace disponible */
+        }
+
+        .category-image {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-top: 0; /* Enlever la marge du haut */
+        }
+
+        .team-content {
+            display: flex;
+            gap: 20px;
+        }
+
+        .team-image {
+            width: 400px; /* Largeur fixe pour l'image d'équipe */
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-top: 0;
+        }
+
+        /* ... [Garder les autres styles] ... */
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Epreuves Du Judo Au JO</h1>
+        <div class="logo">⬡</div>
+    </div>
+
+    <div class="grid-container">
+        <div class="card">
+            <div class="card-content">
+                <div class="text-content">
+                    <h2>Catégories Masculines</h2>
+                    <ul>
+                        <li>60 kg</li>
+                        <li>66 kg</li>
+                        <li>73 kg</li>
+                        <li>81 kg</li>
+                        <li>90 kg</li>
+                        <li>100 kg</li>
+                        <li>+100 kg</li>
+                    </ul>
+                </div>
+                <img src="/api/placeholder/200/150" alt="Judoka masculin" class="category-image">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="text-content">
+                    <h2>Catégories Féminines</h2>
+                    <ul>
+                        <li>48 kg</li>
+                        <li>52 kg</li>
+                        <li>57 kg</li>
+                        <li>63 kg</li>
+                        <li>70 kg</li>
+                        <li>78 kg</li>
+                        <li>+78 kg</li>
+                    </ul>
+                </div>
+                <img src="/api/placeholder/200/150" alt="Judoka féminine" class="category-image">
+            </div>
+        </div>
+
+        <div class="card full-width">
+            <div class="team-content">
+                <div class="text-content">
+                    <h2>Épreuve par équipes mixtes</h2>
+                    <p>En plus des compétitions individuelles, il y a également une épreuve par équipes mixtes, qui consiste en une compétition entre équipes composées de judokas masculins et féminins.</p>
+                    <p>Les catégories par équipes mixtes incluent des combattants de diverses catégories de poids, mais les règles précises de sélection des athlètes pour chaque équipe seront définies par les fédérations nationales.</p>
+                </div>
+                <img src="/api/placeholder/400/250" alt="Équipe de judo" class="team-image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
