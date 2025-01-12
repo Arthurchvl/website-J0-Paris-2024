@@ -1,14 +1,58 @@
 /********************************************
 Caractéristiques globales de toutes les pages
 ********************************************/
+/* Styles par défaut (Desktop 1440x1024) */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
+    font-size: 18px;
     color: black;
     background-color: white;
-    width: 1440px;
+    width: 100%; /* S'adapte à la largeur */
+    max-width: 1440px;
+    margin: 0 auto; /* Centrer sur écrans larges */
 }
 
+/* Pour les écrans de téléphone (428x926) */
+@media screen and (max-width: 428px) {
+    body {
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        flex-direction: column; /* Affiche les éléments en colonne */
+        padding-bottom: 20px; /* Réduit la hauteur */
+    }
+
+    #codeSportif section {
+        flex-direction: column; /* Empile les éléments */
+        margin: 5px;
+        padding: 5px;
+    }
+
+    #codeSportif main>section:first-of-type aside {
+        width: 100%;
+    }
+
+    #codeSportif main>section:first-of-type article {
+        width: 100%;
+    }
+
+    #codeSportif main>section:nth-child(2) table {
+        width: 100%;
+        font-size: 12px; /* Réduit la taille du texte */
+    }
+
+    footer aside {
+        flex-direction: column; /* Réduit la largeur du footer */
+        font-size: 12px;
+    }
+
+    footer div>a {
+        margin: 5px;
+    }
+}
 /*********************************************
 Caractéristiques du footer de toutes les pages
 *********************************************/
