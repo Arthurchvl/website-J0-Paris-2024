@@ -32,11 +32,12 @@ main {
     margin-bottom: 2rem;
 }
 
-section {
+section{
     display: flex;
     gap: 1rem;
     justify-content: space-between;
     background-color: #f4f4f4;
+    border-radius: 10px;
 }
 
 section:first-of-type{
@@ -47,6 +48,11 @@ section:first-of-type{
 
 section:first-of-type img{
     width: 100%;
+}
+
+section:first-of-type h1{
+    width: 100%;
+    text-align: center;
 }
 
 

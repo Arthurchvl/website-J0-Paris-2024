@@ -26,6 +26,7 @@
     <main>
 
         <section>
+            <h1>Jeux Olympiques Paris 2024</h1>
             <img src="images/seine_olympique.png" alt="Vue de Paris et la cérémonie" class="large-image">
             <figure>
                 <img src="images/sport_jeux_olympiques_1.png" alt="Catégories des Jeux Olympiques">
@@ -105,7 +106,6 @@ updateCarousel();
             <th>Argent</th>
             <th>Bronze</th>
             <th>Total</th>
-            <th>% Médailles</th>
           </tr>
         </thead>
         <tbody>
@@ -115,8 +115,7 @@ updateCarousel();
             <td>39</td>
             <td>41</td>
             <td>33</td>
-            <td>113</td>
-            <td>27.73%</td>
+            <td></td>
           </tr>
           <tr>
             <td>2</td>
@@ -125,7 +124,6 @@ updateCarousel();
             <td>32</td>
             <td>18</td>
             <td>88</td>
-            <td>21.72%</td>
           </tr>
           <tr>
             <td>3</td>
@@ -134,7 +132,6 @@ updateCarousel();
             <td>14</td>
             <td>17</td>
             <td>58</td>
-            <td>14.44%</td>
           </tr>
           <tr>
             <td>4</td>
@@ -143,7 +140,6 @@ updateCarousel();
             <td>16</td>
             <td>19</td>
             <td>46</td>
-            <td>11.29%</td>
           </tr>
           <tr>
             <td>5</td>
@@ -152,7 +148,6 @@ updateCarousel();
             <td>13</td>
             <td>14</td>
             <td>37</td>
-            <td>9.09%</td>
           </tr>
           <tr>
             <td>6</td>
@@ -161,7 +156,6 @@ updateCarousel();
             <td>3</td>
             <td>2</td>
             <td>6</td>
-            <td>1.46%</td>
           </tr>
           <tr>
             <td>7</td>
@@ -170,7 +164,6 @@ updateCarousel();
             <td>3</td>
             <td>2</td>
             <td>6</td>
-            <td>1.46%</td>
           </tr>
           <tr>
             <td>8</td>
@@ -179,7 +172,6 @@ updateCarousel();
             <td>3</td>
             <td>2</td>
             <td>6</td>
-            <td>1.46%</td>
           </tr>
           <tr>
             <td>9</td>
@@ -188,7 +180,6 @@ updateCarousel();
             <td>8</td>
             <td>10</td>
             <td>25</td>
-            <td>6.09%</td>
           </tr>
           <tr>
             <td>10</td>
@@ -197,11 +188,45 @@ updateCarousel();
             <td>7</td>
             <td>22</td>
             <td>46</td>
-            <td>11.29%</td>
           </tr>
         </tbody>
       </table>
     </section>
+
+</section>            
+<div class="caption">Cérémonie D'ouverture</div>
+<div class="carousel">
+<div class="carousel-images" id="carousel-images">
+<img src="images/beach_volley.png" alt="Cérémonie d'ouverture">
+<img src="images/carte_sites_olympiques.png" alt="Image 2">
+<img src="images/" alt="Image 3">
+</div>
+<div class="carousel-buttons">
+<button onclick="prevSlide()">&#8249;</button>
+<button onclick="nextSlide()">&#8250;</button>
+</div>
+</div>
+<script>
+let currentIndex2 = 0;
+const images2 = document.getElementById('carousel-images');
+const totalImages2 = images2.children.length;
+
+function updateCarousel() {
+const offset = -currentIndex2 * 100;
+images2.style.transform = `translateX(${offset}%)`;
+}
+
+function nextSlide() {
+currentIndex2 = (currentIndex2 + 1) % totalImages2;
+updateCarousel();
+}
+
+function prevSlide() {
+currentIndex2 = (currentIndex2 - 1 + totalImages2) % totalImages2;
+updateCarousel();
+}
+</script>
+<section>
     
         </main>
         <footer>
