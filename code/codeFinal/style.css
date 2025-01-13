@@ -54,7 +54,7 @@ body {
     }
 
     #codeSportif main>section:first-of-type {
-        flex-direction: column; /* Les éléments se superposent */
+        flex-wrap: wrap; /* Les éléments se superposent */
         align-items: center; /* Centre les éléments horizontalement */
     }
 
