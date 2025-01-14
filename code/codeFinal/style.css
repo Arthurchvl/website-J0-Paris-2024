@@ -54,17 +54,10 @@ body {
     }
 
     #codeSportif main>section:first-of-type {
-        flex-wrap: wrap; /* Les éléments se superposent */
-        align-items: center; /* Centre les éléments horizontalement */
-    }
-
-    #codeSportif main>section:first-of-type aside {
-        width: 100%; /* L'image prend toute la largeur */
-    }
-
-    #codeSportif main>section:first-of-type article {
-        width: 100%; /* La biographie prend toute la largeur */
-        margin-top: 10px; /* Ajoute un espacement au-dessus du texte */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
     }
 }
 /*********************************************
@@ -318,12 +311,11 @@ Caractéristiques de la section actualités + réseaux sociaux de la page sporti
 /****************************************************************************
 Caractéristiques de la section biographie + fiche identité de la page sportif
 ****************************************************************************/
-#codeSportif main>section:first-of-type {
+#codeSportif main>section:first-of-type{
     display: flex;
     flex-direction: row; /* Les éléments restent côte à côte */
     flex-wrap: nowrap;
-    width: auto;
-    background-color: white;
+    width: 100%;
 }
 
 #codeSportif main>section:first-of-type article {
@@ -336,6 +328,7 @@ Caractéristiques de la section biographie + fiche identité de la page sportif
 
 #codeSportif main>section:first-of-type aside {
     width: 50%;
+    height: auto;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -347,21 +340,6 @@ Caractéristiques de la section biographie + fiche identité de la page sportif
 #codeSportif main>section:first-of-type article h2 {
     text-align: center;
     margin-top: 20px;
-}
-#codeSportif main>section:first-of-type {
-    display: flex;
-    flex-direction: row; /* Les éléments restent côte à côte */
-    flex-wrap: nowrap;
-    width: auto;
-    background-color: white;
-}
-
-#codeSportif main>section:first-of-type article {
-    width: 50%;
-    background-color: #e3d2c1;
-    border-radius: 10px;
-    margin: 0px;
-    padding: 20px 10px;
 }
 
 #codeSportif main>section:first-of-type aside img {
