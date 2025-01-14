@@ -558,7 +558,7 @@ section article {
     margin-bottom: 20px;
 }
 
-#codeDiscipline section:nth-child(3) article {
+#codeDiscipline section:nth-child(3) article { 
     border: 5px solid ;
     border-image: linear-gradient(#3E405C, #8386C2, black, white) 1;
     border-radius: 10px;
@@ -601,7 +601,7 @@ section article {
 }
 
 #codeDiscipline section:nth-child(4) div article:first-child>img, #codeDiscipline section:nth-child(4) div article:nth-child(2)>img {
-    width: 200px;
+    width: 100%;
     border-radius: 10px;
 }
 
@@ -705,7 +705,7 @@ section article {
 }
 
 #codeDiscipline section:nth-child(5) img {
-    width: 100px;
+    width: 100%;
     border-radius: 10px;
 }
 
