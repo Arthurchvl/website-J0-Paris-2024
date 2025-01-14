@@ -1,61 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image en haut à droite</title>
   <style>
-    body {
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      background: #2b2b3d;
+      color: white;
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
+    }
+    
+    thead {
+      border: 1px solid white;
+      background: linear-gradient(
+        90deg,
+        rgba(0, 255, 255, 0.1) 0%,
+        rgba(255, 255, 0, 0.2) 50%,
+        rgba(255, 67, 255, 0.1) 100%
+      );
+      border-radius: 10px;
     }
 
-    section {
-      position: relative; /* Nécessaire pour positionner l'image */
-      border: 1px solid #ccc;
-      padding: 20px;
-      margin: 20px 0;
+    th {
+      padding: 15px;
+      font-weight: bold;
+      /* Enlever les bordures des th individuels */
+      border: none;
     }
 
-    h1 {
-      margin: 0;
-      font-size: 24px;
+    td {
+      padding: 15px;
+      border-bottom: 5px solid rgba(255, 255, 255, 0.1);
     }
 
-    p {
-      margin-top: 10px;
-      font-size: 16px;
-    }
-
-    .top-right-image {
-      position: absolute; /* Position absolue pour placer l'image */
-      top: 0; /* Aligné en haut */
-      right: 0; /* Aligné à droite */
-      transform: translate(50%, -50%); /* Ajustement pour sortir légèrement du conteneur */
-      width: 50px; /* Taille de l'image */
-      height: 50px;
-      object-fit: cover; /* Garde le ratio de l'image */
+    /* Pour enlever la dernière ligne de séparation */
+    tbody tr:last-child td {
+      border-bottom: none;
     }
   </style>
 </head>
 <body>
-  <section>
-    <img src="images/beach_volley.png" alt="Image en haut à droite" class="top-right-image">
-    <h1>Section 1</h1>
-    <p>Contenu de la première section.</p>
-  </section>
-
-  <section>
-    <img src="https://via.placeholder.com/50" alt="Image en haut à droite" class="top-right-image">
-    <h1>Section 2</h1>
-    <p>Contenu de la deuxième section.</p>
-  </section>
-
-  <section>
-    <img src="https://via.placeholder.com/50" alt="Image en haut à droite" class="top-right-image">
-    <h1>Section 3</h1>
-    <p>Contenu de la troisième section.</p>
-  </section>
+  <table>
+    <thead>
+      <tr>
+        <th>Drapeau</th>
+        <th>Pays</th>
+        <th>OR</th>
+        <th>AR</th>
+        <th>BR</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>🇯🇵</td>
+        <td>Japon</td>
+        <td>3</td>
+        <td>2</td>
+        <td>3</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>🇫🇷</td>
+        <td>France</td>
+        <td>2</td>
+        <td>2</td>
+        <td>6</td>
+        <td>10</td>
+      </tr>
+    </tbody>
+  </table>
 </body>
 </html>

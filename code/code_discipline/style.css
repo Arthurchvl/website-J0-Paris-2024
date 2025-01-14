@@ -208,14 +208,14 @@ table {
 table thead {
     background: linear-gradient(to top right, #8386C2, #3E405C);
     border-radius: 10px;
-    
     height: 155px;
-    
-
     border: solid 3px;
     border-color: #E3D2C1;
     
 }
+
+
+
 
 th:nth-child(3)>div, th:nth-child(4)>div, th:nth-child(5)>div, td:nth-child(3)>div, td:nth-child(4)>div, td:nth-child(5)>div {
     border-radius: 100%;
