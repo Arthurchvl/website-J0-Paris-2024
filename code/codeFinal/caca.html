@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image en haut à droite</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    section {
+      position: relative; /* Nécessaire pour positionner l'image */
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    .top-right-image {
+      position: absolute; /* Position absolue pour placer l'image */
+      top: 0; /* Aligné en haut */
+      right: 0; /* Aligné à droite */
+      transform: translate(50%, -50%); /* Ajustement pour sortir légèrement du conteneur */
+      width: 50px; /* Taille de l'image */
+      height: 50px;
+      object-fit: cover; /* Garde le ratio de l'image */
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <img src="images/beach_volley.png" alt="Image en haut à droite" class="top-right-image">
+    <h1>Section 1</h1>
+    <p>Contenu de la première section.</p>
+  </section>
+
+  <section>
+    <img src="https://via.placeholder.com/50" alt="Image en haut à droite" class="top-right-image">
+    <h1>Section 2</h1>
+    <p>Contenu de la deuxième section.</p>
+  </section>
+
+  <section>
+    <img src="https://via.placeholder.com/50" alt="Image en haut à droite" class="top-right-image">
+    <h1>Section 3</h1>
+    <p>Contenu de la troisième section.</p>
+  </section>
+</body>
+</html>

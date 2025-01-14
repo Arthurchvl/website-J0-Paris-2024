@@ -442,13 +442,14 @@ Caractéristiques de la section palmarès de la page sportif
 
 
 
-header:first-child img {
+#codeDiscipline header:first-child img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-section {
+#codeDiscipline section {
+    position: relative;
     background-color: #E3D2C1;
     border-radius: 10px;
     margin: 1.25em;
@@ -458,7 +459,7 @@ section {
     padding-top: 3.125em;
 }
 
-main > div {
+#codeDiscipline main > div {
     background: linear-gradient(to right, #3E405C, #8386C2);
     display: flex;
     position: sticky;
@@ -475,18 +476,18 @@ main > div {
     z-index: 4;
 }
 
-h1 {
+#codeDiscipline h1 {
     font-family: "Cormorant", serif;
     font-size: 42px;
 }
 
-h2 {
+#codeDiscipline h2 {
     font-family: "Roboto", sans-serif;
     font-size: 24px;
     font-weight: bold;
 }
 
-section article {
+#codeDiscipline section article {
     border-radius: 10px;
     border-color: linear-gradient(to right, #3E405C, #8386C2) ;
 }
@@ -512,6 +513,13 @@ section article {
     text-align: center;
 }
 
+#codeDiscipline section:nth-child(4)>img,  {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    
+}
+
 /*//////////////////////////////////*/
 /* Section 1/2 : origine judo       */
 /*//////////////////////////////////*/
@@ -523,12 +531,13 @@ section article {
     place-items: center;
 }
 
-#codeDiscipline section>article>img {
+#codeDiscipline section>article:first-child>img {
     grid-column: 1;
     grid-row: 1;
+    border-radius: 10px;
 }
 
-#codeDiscipline section>article>div {
+#codeDiscipline section>article:first-child>div {
     grid-column: 2 / 4;
     grid-row: 1;
     text-align: justify;
@@ -543,6 +552,8 @@ section article {
 #codeDiscipline section>article:nth-child(2)>img {
     grid-column: 3;
     grid-row: 1;
+    border-radius: 10px;
+    border-radius: 10px;
 }
 
 
@@ -632,11 +643,7 @@ section article {
     margin-top: 0;
 }
 
-#codeDiscipline section:nth-child(4)>img {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-}
+
 
 /*//////////////////////////////////*/
 /* Section 5 : tableau des medaille */
