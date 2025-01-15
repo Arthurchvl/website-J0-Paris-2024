@@ -7,8 +7,8 @@ body {
     font-size: 18px;
     color: black;
     background-color: white;
-    width: 100%; /* S'adapte à la largeur */
-    margin: 0 auto; /* Centrer sur écrans larges */
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 /* Pour les écrans de téléphone (428x926) */
@@ -20,31 +20,23 @@ body {
     }
 
     header {
-        flex-direction: column; /* Affiche les éléments en colonne */
-        padding-bottom: 20px; /* Réduit la hauteur */
+        flex-direction: column;
+        padding-bottom: 20px;
     }
 
     #codeSportif section {
-        flex-direction: column; /* Empile les éléments */
+        flex-direction: column;
         margin: 5px;
         padding: 5px;
     }
 
-    #codeSportif main>section:first-of-type aside {
-        width: 100%;
-    }
-
-    #codeSportif main>section:first-of-type article {
-        width: 100%;
-    }
-
     #codeSportif main>section:nth-child(2) table {
         width: 100%;
-        font-size: 12px; /* Réduit la taille du texte */
+        font-size: 12px;
     }
 
     footer aside {
-        flex-direction: column; /* Réduit la largeur du footer */
+        flex-direction: column;
         font-size: 12px;
     }
 
@@ -52,11 +44,12 @@ body {
         margin: 5px;
     }
 
-    #codeSportif main>section:first-of-type {
-        display: flex;
-        flex-direction: row;
+    #codeSportif main>section:first-child{ /*Responsivité de la section biographie et carte identité*/
+        flex-wrap: wrap-reverse;
+    }
+
+    #codeSportif main section:last-child { /*Responsivité de la section actualités et réseaux sociaux*/
         flex-wrap: wrap;
-        width: 100%;
     }
 }
 /*********************************************
@@ -139,6 +132,7 @@ Caractéristiques du header de la page sportif
 ********************************************/
 #codeSportif header {
     background-image: url(images/imagesHeader.png);
+    background-image: 100%;
     background-repeat: no-repeat;
     background-position: center;
     align-items: center;
@@ -196,7 +190,7 @@ Caractéristiques de la section performances de carrière de la page sportif
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: right;
+    justify-content: center;
 }
 
 #codeSportif main aside aside {
@@ -226,9 +220,8 @@ Caractéristiques de la section performances de carrière de la page sportif
 
 #codeSportif main aside h2, main aside h3 {
     margin: 20px 0;
-    color: black; /* Couleur des titres */
+    color: black;
     font-weight: bold;
-    justify-content: center;
 }
 
 #codeSportif main aside aside h3 {
@@ -245,13 +238,13 @@ Caractéristiques de la section performances de carrière de la page sportif
 }
 
 #codeSportif main aside article ul {
-    list-style-type: disc; /* Marqueurs en disques */
+    list-style-type: disc;
     padding-left: 20px;
     margin-left: 20px;
 }
 
 #codeSportif main aside article ul li {
-    margin: 10px 0; /* Espacement entre les éléments */
+    margin: 10px 0;
 }
 /*****************************************************************************
 Caractéristiques de la section actualités + réseaux sociaux de la page sportif
@@ -283,8 +276,9 @@ Caractéristiques de la section actualités + réseaux sociaux de la page sporti
 }
 
 #codeSportif main section:last-child {
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 #codeSportif main section:last-child img {
@@ -310,23 +304,23 @@ Caractéristiques de la section actualités + réseaux sociaux de la page sporti
 /****************************************************************************
 Caractéristiques de la section biographie + fiche identité de la page sportif
 ****************************************************************************/
-#codeSportif main>section:first-of-type{
+#codeSportif main>section:first-child{
     display: flex;
-    flex-direction: row; /* Les éléments restent côte à côte */
-    flex-wrap: nowrap;
-    width: 100%;
+    flex-direction: row;
+    background-color: white;
+    width: auto;
 }
 
-#codeSportif main>section:first-of-type article {
-    width: 50%;
+#codeSportif main>section:first-child article {
+    width: 45%;
     background-color: #e3d2c1;
     border-radius: 10px;
     margin: 0px;
     padding: 20px 10px;
 }
 
-#codeSportif main>section:first-of-type aside {
-    width: 50%;
+#codeSportif main>section:first-child aside {
+    width: 45%;
     height: auto;
     background-color: white;
     display: flex;
@@ -336,17 +330,17 @@ Caractéristiques de la section biographie + fiche identité de la page sportif
     padding: 10px;
 }
 
-#codeSportif main>section:first-of-type article h2 {
+#codeSportif main>section:first-child article h2 {
     text-align: center;
     margin-top: 20px;
 }
 
-#codeSportif main>section:first-of-type aside img {
+#codeSportif main>section:first-child aside img {
     height: 50%;
     width: 100%;
 }
 
-#codeSportif main>section:first-of-type aside li {
+#codeSportif main>section:first-child aside li {
     margin: 10px;
 }
 
@@ -414,18 +408,17 @@ Caractéristiques de la section palmarès de la page sportif
     padding-right: 0em;
 }
 
-
 /*********************************************************************************************************************************/
 
 
 
-header:first-child img {
+#codeDiscipline header:first-child img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-section {
+#codeDiscipline section {
     position: relative;
     background-color: #E3D2C1;
     border-radius: 10px;
@@ -436,7 +429,7 @@ section {
     padding-top: 3.125em;
 }
 
-main > div {
+#codeDiscipline main > div {
     background: linear-gradient(to right, #3E405C, #8386C2);
     display: flex;
     position: sticky;
@@ -445,7 +438,7 @@ main > div {
     height: 6em;
     z-index: 3;
 }
-#elem {
+#codeDiscipline #elem {
     background: linear-gradient(to right, #3E405C, #8386C2);
     width: 30%;
     border-radius: 100% 0% 0% 0%;
@@ -453,22 +446,22 @@ main > div {
     z-index: 4;
 }
 
-h1 {
+#codeDiscipline h1 {
     font-family: "Cormorant", serif;
     font-size: 42px;
 }
 
-h2 {
+#codeDiscipline h2 {
     font-family: "Roboto", sans-serif;
     font-size: 24px;
     font-weight: bold;
 }
 
-section article {
+#codeDiscipline section article {
     border-radius: 10px;
     border-color: linear-gradient(to right, #3E405C, #8386C2) ;
 }
-#menu {
+#codeDiscipline #menu {
     border-radius: 100%;
     margin: auto;
     text-align: center;
@@ -479,7 +472,7 @@ section article {
     width: 3em;
     height: 3em;
 }
-#logo {
+#codeDiscipline #logo {
     position: fixed;
     top: 2%;
     left: 45%;
