@@ -409,14 +409,177 @@ Caractéristiques de la section palmarès de la page sportif
 }
 
 /*********************************************************************************************************************************/
+/******************/
+/*     header     */
+/******************/
+
+#codeDiscipline header div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 38%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 101;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    height: 15%;
+}
+
+#codeDiscipline header div nav {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+    max-width: 100%;
+    min-width: 0;
+    height: 100%;
+}
+#codeDiscipline header div img {
+    grid-column: 2;
+    grid-row: 1;
+    width: 75%;
+
+  
+}
+#codeDiscipline header div button{
+    grid-column: 3;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    height: 50%;
+}
 
 
 
-#codeDiscipline header:first-child img {
+
+
+/*fond qui apparait*/
+#codeDiscipline main nav {
+    position: fixed;
+    top: -20em;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #3E405C, #8386C2);
+    color: white;
+    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    transition: top 0.3s ease;
+    height: 10%;
+    z-index: 3;
+  }
+
+#codeDiscipline nav.visible {
+    top: 0;
+}
+
+/*mode sombre*/
+
+/* Style du bouton */
+#codeDiscipline header button {
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: 100;
+    position: relative;
+}
+
+#codeDiscipline button:hover {
+    background-color: black;
+    color: white;
+}
+
+  /* Mode sombre */
+body[data-theme='dark'] {
+    background-color: black;
+    color: white;
+  }
+
+body[data-theme='dark'] header {
+    background-color: #444;
+  }
+
+body[data-theme='dark'] header button {
+    background-color: blue;
+  }
+
+body[data-theme='dark'] header button:hover {
+    background-color: #666;
+  }
+
+/*menu deroulant*/
+
+
+#codeDiscipline header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    z-index: 10;
+    border-radius: 10px;
+}
+
+#codeDiscipline header nav ul li {
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+#codeDiscipline header nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    display: block;
+}
+
+#codeDiscipline header nav ul li a:hover {
+    background-color: #C0C0C0;
+    border-radius: 10px;
+}
+
+#codeDiscipline header nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #C0C0C0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#codeDiscipline header nav ul li ul li a {
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
+#codeDiscipline header nav ul li ul li a:hover {
+    background-color: white;
+}
+
+#codeDiscipline header nav ul li:hover ul {
+    display: block;
+}
+
+#codeDiscipline header:first-child>img {
     width: 100%;
     height: auto;
     display: block;
 }
+
+
+
+
+
 
 #codeDiscipline section {
     position: relative;
@@ -427,23 +590,6 @@ Caractéristiques de la section palmarès de la page sportif
     padding-right: 8.125em;
     padding-bottom: 2.25em;
     padding-top: 3.125em;
-}
-
-#codeDiscipline main > div {
-    background: linear-gradient(to right, #3E405C, #8386C2);
-    display: flex;
-    position: sticky;
-    top: 0px;
-    margin: 0px;
-    height: 6em;
-    z-index: 3;
-}
-#codeDiscipline #elem {
-    background: linear-gradient(to right, #3E405C, #8386C2);
-    width: 30%;
-    border-radius: 100% 0% 0% 0%;
-    margin-left: 70%;
-    z-index: 4;
 }
 
 #codeDiscipline h1 {
@@ -461,28 +607,12 @@ Caractéristiques de la section palmarès de la page sportif
     border-radius: 10px;
     border-color: linear-gradient(to right, #3E405C, #8386C2) ;
 }
-#codeDiscipline #menu {
-    border-radius: 100%;
-    margin: auto;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    width: 3em;
-    height: 3em;
-}
-#codeDiscipline #logo {
-    position: fixed;
-    top: 2%;
-    left: 45%;
-    width: 111px;
-    z-index: 5;
-}
+
+
 #codeDiscipline section h1 {
     text-align: center;
 }
-
+/*logo judo jo*/
 #codeDiscipline section:nth-child(2)>img, #codeDiscipline section:nth-child(3)>img, #codeDiscipline section:nth-child(4)>img, #codeDiscipline section:nth-child(5)>img, #codeDiscipline section:nth-child(6)>img{
     position: absolute;
     top: 2%;
@@ -647,7 +777,12 @@ Caractéristiques de la section palmarès de la page sportif
 #codeDiscipline tbody tr:last-child td {
     border-bottom: none;
 }
-
+#codeDiscipline th:last-child {
+    width: 8em;
+}
+#codeDiscipline th {
+    width: 25%;
+}
 #codeDiscipline th:nth-child(2)>div, #codeDiscipline th:nth-child(3)>div, #codeDiscipline th:nth-child(4)>div, #codeDiscipline td:nth-child(3)>div, #codeDiscipline td:nth-child(4)>div, #codeDiscipline td:nth-child(5)>div {
     border-radius: 100%;
     margin: auto;
@@ -655,42 +790,9 @@ Caractéristiques de la section palmarès de la page sportif
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 75px;
-    height: 75px;  
+    width: 4.688em;
+    height: 4.688em;  
 }
-
-#codeDiscipline th:nth-child(5) {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#codeDiscipline th:nth-child(5) div {
-    position: absolute;
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-}
-
-#codeDiscipline th:nth-child(5)>div:first-child {
-    background: #D3C481;
-    transform: translateX(-25px) translateY(25px);
-}
-
-#codeDiscipline th:nth-child(5)>div:nth-child(2) {
-    background: #C0C0C0;
-    transform: translateX(25px) translateY(25px);
-}
-
-#codeDiscipline th:nth-child(5)>div:last-child {
-    background: #CD7F32;
-    transform: translateY(-25px);
-}
-
-
 #codeDiscipline th:nth-child(2)>div {
     background-color: #D3C481; 
 }
@@ -700,9 +802,40 @@ Caractéristiques de la section palmarès de la page sportif
 #codeDiscipline th:nth-child(4)>div {
     background-color: #CD7F32;
 }
+
+#codeDiscipline th:nth-child(5) {
+    position: relative;
+    height: 8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#codeDiscipline th:nth-child(5) div {
+    position: absolute;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+}
+
+#codeDiscipline th:nth-child(5)>div:first-child {
+    background: #D3C481;
+    transform: translateX(-0.938em) translateY(0.938em);
+}
+
+#codeDiscipline th:nth-child(5)>div:nth-child(2) {
+    background: #C0C0C0;
+    transform: translateX(0.938em) translateY(0.936em);
+}
+
+#codeDiscipline th:nth-child(5)>div:last-child {
+    background: #CD7F32;
+    transform: translateY(-0.938em);
+}
+
 #codeDiscipline td:nth-child(3)>div, #codeDiscipline td:nth-child(4)>div, #codeDiscipline td:nth-child(5)>div {
-    width: 50px;
-    height: 50px;  
+    width: 3em;
+    height: 3em;  
 }
 #codeDiscipline td:nth-child(3)>div {
     background-color: #D3C481; 
@@ -713,13 +846,10 @@ Caractéristiques de la section palmarès de la page sportif
 #codeDiscipline td:nth-child(5)>div {
     background-color: #CD7F32;
 }
-
 #codeDiscipline td {
     text-align: center;
 }
-#codeDiscipline th {
-    width: 20%;
-}
+
 #codeDiscipline th:first-child, #codeDiscipline td:nth-child(2), #codeDiscipline td:nth-child(6){
     color: white;
 }

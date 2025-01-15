@@ -1,74 +1,149 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Mode avec Sections</title>
   <style>
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      background: #2b2b3d;
-      color: white;
+    /* Style global du body */
+    body {
       font-family: Arial, sans-serif;
-    }
-    
-    thead {
-      border: 1px solid white;
-      background: linear-gradient(
-        90deg,
-        rgba(0, 255, 255, 0.1) 0%,
-        rgba(255, 255, 0, 0.2) 50%,
-        rgba(255, 67, 255, 0.1) 100%
-      );
-      border-radius: 10px;
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.3s, color 0.3s;
     }
 
-    th {
-      padding: 15px;
-      font-weight: bold;
-      /* Enlever les bordures des th individuels */
+    /* Style de l'en-tête */
+    #codeDiscipline header div {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;  /* Trois colonnes égales */
+      grid-gap: 10px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 101;
+      padding: 10px 20px;
+      height: 60px;
+    }
+
+    #codeDiscipline header div nav,
+    #codeDiscipline header div img,
+    #codeDiscipline header div button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Style du bouton pour changer le mode */
+    #codeDiscipline header button {
+      background-color: #4B4747;
+      color: white;
       border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      z-index: 100;
+      position: relative;
     }
 
-    td {
-      padding: 15px;
-      border-bottom: 5px solid rgba(255, 255, 255, 0.1);
+    /* Style du bouton au survol */
+    #codeDiscipline button:hover {
+      background-color: #45a049;
     }
 
-    /* Pour enlever la dernière ligne de séparation */
-    tbody tr:last-child td {
-      border-bottom: none;
+    /* Style des sections */
+    #codeDiscipline main section {
+      padding: 20px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    #codeDiscipline main section:nth-of-type(1) {
+      background-color: #f0f0f0;
+    }
+
+    #codeDiscipline main section:nth-of-type(2) {
+      background-color: #e0e0e0;
+    }
+
+    #codeDiscipline main section:nth-of-type(3) {
+      background-color: #d0d0d0;
+    }
+
+    /* Mode sombre : changement de couleur des sections */
+    body[data-theme='dark'] #codeDiscipline main section:nth-of-type(1) {
+      background-color: #333;
+    }
+
+    body[data-theme='dark'] #codeDiscipline main section:nth-of-type(2) {
+      background-color: #444;
+    }
+
+    body[data-theme='dark'] #codeDiscipline main section:nth-of-type(3) {
+      background-color: #555;
+    }
+
+    /* Style du menu de navigation dans l'en-tête */
+    #codeDiscipline header nav {
+      grid-column: 1;
+      grid-row: 1;
+      background-color: black;
+    }
+
+    #codeDiscipline header img {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    #codeDiscipline header button {
+      grid-column: 3;
+      grid-row: 1;
     }
   </style>
 </head>
 <body>
-  <table>
-    <thead>
-      <tr>
-        <th>Drapeau</th>
-        <th>Pays</th>
-        <th>OR</th>
-        <th>AR</th>
-        <th>BR</th>
-        <th>Total</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>🇯🇵</td>
-        <td>Japon</td>
-        <td>3</td>
-        <td>2</td>
-        <td>3</td>
-        <td>8</td>
-      </tr>
-      <tr>
-        <td>🇫🇷</td>
-        <td>France</td>
-        <td>2</td>
-        <td>2</td>
-        <td>6</td>
-        <td>10</td>
-      </tr>
-    </tbody>
-  </table>
+  <div id="codeDiscipline">
+    <header>
+      <div>
+        <nav>Menu</nav>
+        <img src="logo.png" alt="Logo">
+        <button id="themeButton">Dark Mode</button>
+      </div>
+    </header>
+    <main>
+      <section>
+        <h2>Section 1</h2>
+        <p>Contenu de la section 1</p>
+      </section>
+      <section>
+        <h2>Section 2</h2>
+        <p>Contenu de la section 2</p>
+      </section>
+      <section>
+        <h2>Section 3</h2>
+        <p>Contenu de la section 3</p>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    // Récupération du bouton et du body
+    const themeButton = document.getElementById('themeButton');
+    const body = document.body;
+
+    // Ajout d'un événement au bouton pour basculer entre les modes clair et sombre
+    themeButton.addEventListener('click', () => {
+      // Vérifier si le mode sombre est activé
+      const currentTheme = body.getAttribute('data-theme');
+      if (currentTheme === 'dark') {
+        body.removeAttribute('data-theme'); // Mode clair
+      } else {
+        body.setAttribute('data-theme', 'dark'); // Mode sombre
+      }
+    });
+  </script>
 </body>
 </html>
