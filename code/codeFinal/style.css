@@ -786,7 +786,7 @@ Epreuve
 }
 
 #codeEpreuve header h1 {
-    background-image: url("https://imgresizer.eurosport.com/unsafe/1200x0/filters:format(webp)/origin-imgresizer.eurosport.com/2024/08/03/4017702-81491688-2560-1440.jpg");
+    background-image: url("images/fond_header.webp");
     background-size: cover;
     background-position: center;
     padding: 6em 0;
