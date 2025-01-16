@@ -45,7 +45,7 @@ body {
     }
 
     #codeSportif main>section:first-child{ /*Responsivité de la section biographie et carte identité*/
-        flex-wrap: wrap-reverse;
+        flex-direction: column !important;
     }
 
     #codeSportif main section:last-child { /*Responsivité de la section actualités et réseaux sociaux*/
