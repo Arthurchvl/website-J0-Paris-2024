@@ -3,8 +3,8 @@
 	<head>
 	    	<meta charset="utf-8" >
 	    	<title>Discipline Judo</title>
-            <meta name="description" content="">
-	    	<meta name="keywords" content="">
+            <meta name="description" content="Découvrez l'histoire et les règles du judo, ses épreuves aux Jeux Olympiques, ainsi que les moments forts de Paris 2024. Infos sur Teddy Riner, classements et bien plus.">	    	
+            <meta name="keywords" content="judo, Jo, jeux Olympiques, Paris, 2024, Teddy Riner, médailles, règles du judo, épreuves Du Judo Au JO, classement des médailles, moments fort de Paris 2024, origine du judo, judo aux jeux Olympiques">
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
@@ -16,21 +16,43 @@
             
 	</head>
 	<body id="codeDiscipline">
-        <header>
-            
+        <header>  
             <img src="images/imageHearder.jpg" alt="image du header">
-            <img id="logo" src="images/LogoJO.png" alt="logo des jo de paris">
-            <div id="menu"></div>
-
+            <div>
+                <nav>
+                    <ul>
+                    <li>
+                        <a href="accueil.html">Accueil</a>
+                        <ul>
+                        <li><a href="sportif.html">Biographie Teddy Riner</a></li>
+                        <li><a href="epreuve.html">Epreuve +100kg</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#origineJudo">L'Origine du Judo</a>
+                        <ul>
+                        <li><a href="#judoAuJo">Le Judo aux Jeux Olympiques</a></li>
+                        <li><a href="#regleDuJudo">Règles du Judo</a></li>
+                        <li><a href="#epreuveDuJudo">Epreuves Du Judo Au JO</a></li>
+                        <li><a href="#classementDesMedailles">Classement des médailles par pays</a></li>
+                        <li><a href="#momentsFort">Les moments fort de Paris 2024</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                </nav>
+                <img src="images/logoJoParisBlanc.png" alt="logo des jo de paris">
+                <button>Dark Mode</button>
+            </div>
         </header>
         <main>
-            <div>
-                <div id="elem"><p>zlbxla</p></div>
-            </div>
+            <nav>
+                <div></div>
+            </nav>
+            
             <section>
                 <article>
                     <div>
-                        <h1>L'Origine du Judo</h1>
+                        <h1 id="origineJudo">L'Origine du Judo</h1>
                         <p>Le judo a été fondé à la fin du XIXe siècle par Jigoro Kano, un éducateur et expert en arts martiaux japonais. Né en 1860, Kano a combiné des techniques de jujutsu traditionnelles pour créer une méthode d'entraînement plus accessible, centrée sur l'équilibre entre le corps et l'esprit. Le terme "judo" signifie littéralement "la voie de la souplesse", un principe fondamental qui encourage à utiliser la force de l'adversaire contre lui, plutôt que de s’opposer directement.
                         Kano a ouvert son premier dojo, le Kodokan, à Tokyo en 1882, où il a développé une pédagogie moderne. Le judo se distingue par son approche systématique et par son objectif de former des individus équilibrés et disciplinés, capables de maîtriser des techniques de projection, d’immobilisation, d’étranglement et de clé articulaire.</p>
                     </div>
@@ -38,13 +60,13 @@
                 </article>
                 <article>
                     <div>
-                        <h1>Le Judo aux Jeux Olympiques</h1>
+                        <h1 id="judoAuJo">Le Judo aux Jeux Olympiques</h1>
                         <p>Le judo a fait son entrée aux Jeux Olympiques de <strong>Tokyo en 1964</strong>, où il était uniquement réservé aux hommes, avec sept catégories de poids. Depuis lors, la discipline a évolué et s’est élargie. En 1992, aux Jeux de Barcelone, les femmes ont fait leur entrée dans le tournoi olympique, marquant une étape importante vers l'égalité des genres dans le sport.Aujourd'hui, le judo aux Jeux Olympiques comprend des compétitions masculines et féminines, réparties en diverses catégories de poids. Aux Jeux de Paris 2024, une nouvelle épreuve par équipes mixtes a été introduite, permettant aux athlètes hommes et femmes de collaborer dans une compétition collective.</p>
                     </div>
                     <img src="images/combatJudoJo.jpg" alt="Combat de judo au JO.">
                 </article>
             </section>
-            <section>
+            <section id="regleDuJudo">
                 
                 <h1>Règles du Judo</h1>
                 <img src="images/logoJoJudo.svg" alt="logo du judo pour les jo">
@@ -72,7 +94,7 @@
                     </article>
                 </div>
             </section>
-            <section>
+            <section id="epreuveDuJudo">
                 <h1>Epreuves Du Judo Au JO</h1>
                 <img src="images/logoJoJudo.svg" alt="logo du judo pour les jo">
                 <div>
@@ -110,7 +132,7 @@
                     </article>
                 </div>
             </section>
-            <section>
+            <section id="classementDesMedailles">
                 <h1>Classement des médailles par pays</h1>
                 <img src="images/logoJoJudo.svg" alt="logo du judo pour les jo">
                 <div>
@@ -170,7 +192,7 @@
                     </table>
                 </div>
             </section>
-            <section>
+            <section id="momentsFort">
                 <h1>Les moments fort de Paris 2024</h1>
                 <img src="images/logoJoJudo.svg" alt="logo du judo pour les jo">
                 <div>
@@ -233,5 +255,6 @@
                 <a href="mailto:marceau.lesech@etudiant.univ-rennes.fr">Le Sech Marceau</a>
             </p>
         </footer>
+        <script src="script.js"></script>
 	</body>
 </html>
