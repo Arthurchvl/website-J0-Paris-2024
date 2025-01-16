@@ -78,6 +78,11 @@ footer aside {
     justify-content: space-between;
 }
 
+footer aside>img {
+    width: 150px;
+    height: auto;
+}
+
 footer nav {
     display: flex;
     flex-direction: column;
