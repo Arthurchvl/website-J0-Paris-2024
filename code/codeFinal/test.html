@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsivité avec Flexbox</title>
+    <style>
+        /* Conteneur flex */
+        .container {
+            display: flex;
+            flex-direction: row; /* Les blocs sont côte à côte */
+            justify-content: space-between; /* Espace entre les blocs */
+            align-items: center; /* Aligne les éléments au centre */
+            gap: 10px; /* Espace entre les blocs */
+        }
+
+        /* Blocs */
+        .block {
+            flex: 1; /* Les blocs prennent un espace égal */
+            padding: 20px;
+            text-align: center;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        /* Media query pour écrans étroits */
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column; /* Les blocs passent l'un sous l'autre */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block">Bloc 1</div>
+        <div class="block">Bloc 2</div>
+    </div>
+</body>
+</html>

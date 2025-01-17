@@ -11,18 +11,38 @@
 </head>
 <body id="codeSportif">
     <header>
-        <figure>
-            <img src="images/Block_change_couleur1.png" alt="logo permettant de passer en mode sombre pour la page" title="logo permettant de changer de couleur">
-        </figure>
-        <figure>
-            <img src="images/logoJoParisBlanc.png" alt="logo des JO blanc, pour les pages en mode clair" title="logo des JO blancs">
-        </figure>
-        <figure>
-            <img src="images/menuLogo1.png" alt="Logo menu" title="logo menu">
-        </figure>
+        <img src="images/imagesHeader.png" alt="image du header">
+        <div>
+            <nav>
+                <ul>
+                <li>
+                    <a href="accueil.html">Accueil</a>
+                    <ul>
+                    <li><a href="discipline.html">Présentation du judo</a></li>
+                    <li><a href="epreuve.html">Epreuve +100kg</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#biographie">Biographie de Teddy Riner</a>
+                    <ul>
+                    <li><a href="#plamares">Le Judo aux Jeux Olympiques</a></li>
+                    <li><a href="#participations">Participations aux Jeux Olympiques</a></li>
+                    <li><a href="#performances">Performances de sa carrière</a></li>
+                    <li><a href="#momentsFort">Moments forts de sa carrière</a></li>
+                    <li><a href="#actualités">Ses actualités</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </nav>
+            <img src="images/logoJoParisBlanc.png" alt="logo des jo de paris">
+            <button>Dark Mode</button>
+        </div>
     </header>
     <main>
-        <section>
+        <nav>
+            <div></div>
+        </nav>
+        <section id="biographie">
             <article>
                 <h2>TEDDY RINER</h2>
                 <p>
@@ -57,7 +77,7 @@
                 </ul>
             </aside>
         </section>
-        <section>
+        <section id="plamares">
             <h2>PALMARÈS</h2>
             <table>
                 <thead>
@@ -115,7 +135,7 @@
             </table>
             <img src="images/image_coupe.png" alt="illsutration coupes podium" title="illustration section palamrès">
         </section>
-        <section>
+        <section id="participations">
             <h2>PARTICIPATIONS JEUX OLYMPIQUES</h2>
             <p>
                 <strong>
@@ -129,7 +149,7 @@
             <video src="videos/JOTokyo2020.mp4" preload="auto" controls="controls" poster="images/minia-tokyo2020.jpg">Tokyo 2020 - 1er</video>
             <video src="videos/JOParis2024.mp4" preload="auto" controls="controls" poster="images/minia-paris2024.jpg">Paris 2024 - 1er</video>
         </section>
-        <aside>
+        <aside id="performances">
             <h2>
                 PERFORMANCES DE CARRIÈRE
             </h2>
@@ -188,7 +208,7 @@
                 </ul>
             </aside>
         </aside>
-        <section>
+        <section id="momentsFort">
             <h2>MOMENTS FORTS</h2>
             <h4>
                 Teddy Riner, légende du judo, a marqué l'histoire par ses performances exceptionnelles et son charisme. 
@@ -211,7 +231,7 @@
                 Avec plus de 20 ans de carrière, il reste une figure emblématique du sport mondial et une source d'inspiration pour les générations futures.
             </p>
         </section>
-        <section>
+        <section id="actualités">
             <aside>
                 <h2>
                     ACTUALITÉS
