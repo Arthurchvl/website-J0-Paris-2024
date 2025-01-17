@@ -45,7 +45,7 @@ body {
     }
 
     #codeSportif main>section:first-child{ /*Responsivité de la section biographie et carte identité*/
-        flex-wrap: wrap-reverse;
+        flex-direction: column !important;
     }
 
     #codeSportif main section:last-child { /*Responsivité de la section actualités et réseaux sociaux*/
@@ -76,6 +76,11 @@ footer aside {
     font-size: 14px;
     width: 80%;
     justify-content: space-between;
+}
+
+footer aside>img {
+    width: 150px;
+    height: auto;
 }
 
 footer nav {
