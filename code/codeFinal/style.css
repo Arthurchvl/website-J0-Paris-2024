@@ -590,11 +590,11 @@ body[data-theme='dark'] header button:hover {
     position: relative;
     background-color: #E3D2C1;
     border-radius: 10px;
-    margin: 1.25em;
-    padding-left: 8.125em;
-    padding-right: 8.125em;
-    padding-bottom: 2.25em;
-    padding-top: 3.125em;
+    margin: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    padding-top: 2%;
 }
 
 #codeDiscipline h1 {
@@ -625,6 +625,55 @@ body[data-theme='dark'] header button:hover {
     
 }
 
+
+
+
+
+/* Téléphones (max-width: 767px) */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+        padding: 0;
+    }
+    #codeDiscipline section:nth-child(4) article {
+        border-radius: 5px !important;
+    }
+    
+    #codeDiscipline section:nth-child(4) div>article:last-child, #codeDiscipline section:nth-child(4) div>article:first-child, #codeDiscipline section:nth-child(4) div>article:nth-child(2){
+
+        grid-template-columns: 1fr !important;
+ 
+        
+    }
+    
+    #codeDiscipline section:nth-child(4) div article:first-child>img, #codeDiscipline section:nth-child(4) div article:nth-child(2)>img, #codeDiscipline section:nth-child(4) div article>img {
+        display: none !important;
+    }
+
+    
+
+    /**  section 6  **/
+
+    #codeDiscipline section:nth-child(6) div>article:first-child, #codeDiscipline section:nth-child(6) div>article:nth-child(2), #codeDiscipline section:nth-child(6) div>article:last-child {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 10px !important;
+        place-items: center;
+    }
+
+    #codeDiscipline section:nth-child(6) div article>iframe, #codeDiscipline section:nth-child(6) div article:last-child>img, #codeDiscipline section:nth-child(6) div article:nth-child(2)>img {
+        grid-column: 1!important;
+        grid-row: 1!important;
+        border-radius: 5px !important;
+    }
+    #codeDiscipline section:nth-child(6) div article>p, #codeDiscipline section:nth-child(6) div article>p, #codeDiscipline section:nth-child(6) div article:nth-child(2)>p{
+        grid-column: 1!important;
+        grid-row: 2!important;
+        text-align: justify;
+    }
+            
+}
+
 /*//////////////////////////////////*/
 /* Section 1/2 : origine judo       */
 /*//////////////////////////////////*/
@@ -632,7 +681,7 @@ body[data-theme='dark'] header button:hover {
 #codeDiscipline section>article{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 10px;
     place-items: center;
 }
 
@@ -658,7 +707,6 @@ body[data-theme='dark'] header button:hover {
     grid-column: 3;
     grid-row: 1;
     border-radius: 10px;
-    border-radius: 10px;
 }
 
 
@@ -670,7 +718,7 @@ body[data-theme='dark'] header button:hover {
 #codeDiscipline section:nth-child(3) div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 10px;
     margin-bottom: 20px;
 }
 
@@ -704,14 +752,14 @@ body[data-theme='dark'] header button:hover {
 #codeDiscipline section:nth-child(4)>div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 10px;
 }
 
 #codeDiscipline section:nth-child(4) div>article:last-child, #codeDiscipline section:nth-child(4) div>article:first-child, #codeDiscipline section:nth-child(4) div>article:nth-child(2){
     padding: 1em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 10px;
     padding: 2em;
     place-items: center;
 }
@@ -871,7 +919,7 @@ body[data-theme='dark'] header button:hover {
     padding: 1em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 10px;
     place-items: center;
 }
 
