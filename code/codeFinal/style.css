@@ -208,7 +208,6 @@ Caractéristiques du header de la page sportif
     border-radius: 10px;
     z-index: 100;
     position: relative;
-    padding: auto;
 }
 
 #codeSportif button:hover {
@@ -335,6 +334,10 @@ Caractéristiques des vidéos de la page sportif
     height: auto;
     margin: 20px;
     padding: 20px;
+}
+
+#codeSportif main>section:nth-of-type(4) li{
+    padding-bottom: 15px;
 }
 
 /*************************************************************************
@@ -467,7 +470,12 @@ Caractéristiques de la section actualités + réseaux sociaux de la page sporti
     width: 100%;
 }
 
-
+#codeSportif main>section:last-child>h2 {
+    width: 0px;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
 
 /****************************************************************************
 Caractéristiques de la section biographie + fiche identité de la page sportif
@@ -517,6 +525,12 @@ Caractéristiques de la section biographie + fiche identité de la page sportif
 
 #codeSportif main>section:first-of-type aside li {
     margin: 10px;
+}
+
+#codeSportif main>section:first-of-type>h2 {
+    width: 0px;
+    padding: 0px;
+    margin: 0px;
 }
 
 /*********************************************************
