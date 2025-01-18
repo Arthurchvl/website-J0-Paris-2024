@@ -33,38 +33,20 @@
                 <figcaption>Découvrez les lieux emblématiques où se dérouleront les épreuves des JO de Paris 2024...</figcaption>
             </figure>
         </section>
-<h1>Cérémonie D'ouverture</h1>
-<div class="carousel">
-<div class="carousel-images" id="carousel-images">
-<img src="images/cérémonie ouverture jo.png" alt="Cérémonie d'ouverture">
-<img src="images/zidane.png" alt="Image 2">
-<img src="images/ceremonie ouver.png" alt="Image 3">
-</div>
-<div class="carousel-buttons">
-<button onclick="prevSlide()">&#8249;</button>
-<button onclick="nextSlide()">&#8250;</button>
-</div>
-</div>
-<script>
-let currentIndex = 0;
-const images = document.getElementById('carousel-images');
-const totalImages = images.children.length;
-
-function updateCarousel() {
-const offset = -currentIndex * 100;
-images.style.transform = `translateX(${offset}%)`;
-}
-
-function nextSlide() {
-currentIndex = (currentIndex + 1) % totalImages;
-updateCarousel();
-}
-
-function prevSlide() {
-currentIndex = (currentIndex - 1 + totalImages) % totalImages;
-updateCarousel();
-}
-</script>
+        <section>
+            <h1>Cérémonie D'ouverture</h1>
+                <div class="carousel">
+                    <div class="carousel-images" id="carousel-images">
+                        <img src="images/cérémonie ouverture jo.png" alt="Cérémonie d'ouverture">
+                        <img src="images/zidane.png" alt="Image 2">
+                        <img src="images/cérémonie ouverture jo.png" alt="Image 3">
+                    </div>
+                    <div class="carousel-buttons">
+                        <button onclick="prevSlide()">&#8249;</button>
+                        <button onclick="nextSlide()">&#8250;</button>
+                    </div>
+                </div>  
+</section>
 <section>
 
     <div class="container">
@@ -85,6 +67,7 @@ updateCarousel();
 </section>
             
 <section>
+    <h1>Tableau des médailles</h1>
     <table>
         <thead>
           <tr>
@@ -183,17 +166,17 @@ updateCarousel();
 
     </section>            
             <h1>Cérémonie de Cloture</h1>
-            <div class="carousel">
-            <div class="carousel-images" id="carousel-images">
-            <img src="images/beach_volley.png" alt="Cérémonie d'ouverture">
-            <img src="images/carte_sites_olympiques.png" alt="Image 2">
-            <img src="images/" alt="Image 3">
+                <div class="carousel">
+                    <div class="carousel-images" id="carousel-images">
+                        <img src="images/beach_volley.png" alt="Cérémonie d'ouverture">
+                        <img src="images/carte_sites_olympiques.png" alt="Image 2">
+                        <img src="images/" alt="Image 3">
+                    </div>
+                    <div class="carousel-buttons">
+                        <button onclick="prevSlide()">&#8249;</button>
+                        <button onclick="nextSlide()">&#8250;</button>
+                    </div>
                 </div>
-                <div class="carousel-buttons">
-                    <button onclick="prevSlide()">&#8249;</button>
-                    <button onclick="nextSlide()">&#8250;</button>
-                </div>
-            </div>
             <script>
             let currentIndex2 = 0;
             const images2 = document.getElementById('carousel-images');
