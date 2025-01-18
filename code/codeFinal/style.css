@@ -678,43 +678,61 @@ Caractéristiques de la section palmarès de la page sportif
     top: 0;
 }
 
-/*mode sombre*/
-
-/* Style du bouton */
-#codeDiscipline header button {
-    background-color: white;
-    color: black;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
-    z-index: 100;
+#codeDiscipline label {
     position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
 }
 
-#codeDiscipline button:hover {
-    background-color: black;
-    color: white;
+#codeDiscipline label input {
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
-  /* Mode sombre */
-body[data-theme='dark'] {
+#codeDiscipline span {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+#codeDiscipline span:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+#codeDiscipline input:checked + span {
     background-color: black;
-    color: white;
-  }
+}
 
-body[data-theme='dark'] header {
-    background-color: #444;
-  }
+#codeDiscipline input:focus + span {
+    box-shadow: 0 0 1px black;
+}
 
-body[data-theme='dark'] header button {
-    background-color: blue;
-  }
+#codeDiscipline input:checked + span:before {
+    transform: translateX(26px);
+}
 
-body[data-theme='dark'] header button:hover {
-    background-color: #666;
-  }
+#codeDiscipline span {
+    border-radius: 34px;
+}
 
-/*menu deroulant*/
+#codeDiscipline span:before {
+    border-radius: 50%;
+}
+
 
 
 #codeDiscipline header nav ul {

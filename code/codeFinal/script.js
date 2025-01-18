@@ -13,15 +13,19 @@ window.addEventListener("scroll", () => {
   }
 });
 
+document.getElementById('toggle-background').addEventListener('click', function() {
+  // Déterminer si le fond actuel est noir
+  const isBlackBackground = document.body.style.backgroundColor === 'black';
 
+  // Changer la couleur de fond et de texte de la page
+  document.body.style.backgroundColor = isBlackBackground ? 'white' : 'black';
+  document.body.style.color = isBlackBackground ? 'black' : 'white'; // Ajuster la couleur du texte
 
-
-// Sélectionner le bouton dans le header et ajouter un gestionnaire d'événement
-document.querySelector('header button').addEventListener('click', function() {
-    // Bascule de l'attribut data-theme entre 'dark' et rien
-    if (document.body.getAttribute('data-theme') === 'dark') {
-      document.body.removeAttribute('data-theme');
-    } else {
-      document.body.setAttribute('data-theme', 'dark');
-    }
+  // Modifier la couleur de fond des articles
+  const articles = document.querySelectorAll('article, section');
+  articles.forEach(article => {
+      article.style.backgroundColor = article.style.backgroundColor === 'gray' ? '#e3d2c1' : 'gray';
   });
+
+  
+});
