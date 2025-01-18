@@ -1313,8 +1313,8 @@ Epreuve
 }
 
 #codeEpreuve header div img {
-    width: 10%;
-    margin-left: 90%;
+    width: 40px;
+    margin-left: 80%;
 }
 
 #codeEpreuve header p {
