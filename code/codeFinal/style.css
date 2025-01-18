@@ -814,7 +814,9 @@ Caractéristiques de la section palmarès de la page sportif
 
 
 
-
+/************************************************************/
+/*     Discipline - Globale                                 */
+/************************************************************/
 
 
 #codeDiscipline section {
@@ -849,7 +851,12 @@ Caractéristiques de la section palmarès de la page sportif
 
 
 /*logo judo jo*/
-#codeDiscipline section:nth-child(2)>img, #codeDiscipline section:nth-child(3)>img, #codeDiscipline section:nth-child(4)>img, #codeDiscipline section:nth-child(5)>img, #codeDiscipline section:nth-child(6)>img{
+#codeDiscipline section:nth-child(2)>img,
+#codeDiscipline section:nth-child(3)>img, 
+#codeDiscipline section:nth-child(4)>img, 
+#codeDiscipline section:nth-child(5)>img, 
+#codeDiscipline section:nth-child(6)>img, 
+#codeDiscipline section:nth-child(7)>img{
     position: absolute;
     top: 2%;
     right: 2%;
@@ -858,8 +865,10 @@ Caractéristiques de la section palmarès de la page sportif
 
 
 
+/************************************************************/
+/*     Discipline - Téléphones (max-width: 767px)           */
+/************************************************************/
 
-/* Téléphones (max-width: 767px) */
 @media screen and (max-width: 767px) {
     #codeDiscpline body {
         font-size: 14px;
@@ -873,8 +882,6 @@ Caractéristiques de la section palmarès de la page sportif
         font-size: 10px !important;
     }
     
-
-
     /** Partie 1 et 2 **/
     #codeDiscipline section>article {
         grid-template-columns: 1fr !important;
@@ -885,257 +892,270 @@ Caractéristiques de la section palmarès de la page sportif
         display: none !important;
     }
 
-    /** Partie 3 **/
-
     /** Partie 4 **/
-    #codeDiscipline section:nth-child(4) article {
+    #codeDiscipline section:nth-child(5) article {
         border-radius: 5px !important;
     }
-    #codeDiscipline section:nth-child(4) div>article:last-child, 
-    #codeDiscipline section:nth-child(4) div>article:first-child, 
-    #codeDiscipline section:nth-child(4) div>article:nth-child(2) {
+    #codeDiscipline section:nth-child(5) div>article:last-child, 
+    #codeDiscipline section:nth-child(5) div>article:first-child, 
+    #codeDiscipline section:nth-child(5) div>article:nth-child(2) {
         grid-template-columns: 1fr !important; 
         gap: 5px !important;
     }
-    #codeDiscipline section:nth-child(4) div article:first-child>img, 
-    #codeDiscipline section:nth-child(4) div article:nth-child(2)>img, 
-    #codeDiscipline section:nth-child(4) div article>img {
+    #codeDiscipline section:nth-child(5) div article:first-child>img, 
+    #codeDiscipline section:nth-child(5) div article:nth-child(2)>img, 
+    #codeDiscipline section:nth-child(5) div article>img {
         display: none !important;
     }
 
     /** Partie 5 **/
-    #codeDiscipline table thead {
-        border: 2px solid #E3D2C1 !important;
-    }
-    #codeDiscipline tbody tr:last-child td {
-        border-bottom: none !important;
-    }
-    #codeDiscipline section:nth-child(5)>div {
-        border-radius: 5px !important;
-    }
-    #codeDiscipline td {
-        border-bottom: 2px solid #E3D2C1 !important;
-    }
-    #codeDiscipline th:last-child {
-        width: 3em !important;
-    }
-    #codeDiscipline th:nth-child(2)>div, 
-    #codeDiscipline th:nth-child(3)>div, 
-    #codeDiscipline th:nth-child(4)>div {
-        width: 2.5em !important;
-        height: 2.5em !important;  
-    }
-    #codeDiscipline th:nth-child(5) {
-        height: 5em !important;
-    }
-    #codeDiscipline th:nth-child(5) div {
-        width: 1.5em !important;
-        height: 1.5em !important;
-    }
-    #codeDiscipline th:nth-child(5)>div:first-child {
-        transform: translateX(-0.5em) translateY(0.5em) !important;
-    }
-    #codeDiscipline th:nth-child(5)>div:nth-child(2) {
-        transform: translateX(0.5em) translateY(0.5em) !important;
-    }
-    #codeDiscipline th:nth-child(5)>div:last-child {
-        transform: translateY(-0.5em) !important;
-    }
-    #codeDiscipline td:nth-child(3)>div, 
-    #codeDiscipline td:nth-child(4)>div, 
-    #codeDiscipline td:nth-child(5)>div {
-        width: 2em !important;
-        height: 2em !important;  
-    }
-    #codeDiscipline section:nth-child(5) table img {
-        display: none !important;
-    }
+   #codeDiscipline table thead {
+       border: 2px solid #E3D2C1 !important;
+   }
+   #codeDiscipline tbody tr:last-child td {
+       border-bottom: none !important;
+   }
+   #codeDiscipline section:nth-child(6)>div {
+       border-radius: 5px !important;
+   }
+   #codeDiscipline td {
+       border-bottom: 2px solid #E3D2C1 !important;
+   }
+   #codeDiscipline th:last-child {
+       width: 3em !important;
+   }
+   #codeDiscipline th:nth-child(2)>div,
+   #codeDiscipline th:nth-child(3)>div,
+   #codeDiscipline th:nth-child(4)>div {
+       width: 2.5em !important;
+       height: 2.5em !important; 
+   }
+   #codeDiscipline th:nth-child(5) {
+       height: 5em !important;
+   }
+   #codeDiscipline th:nth-child(5) div {
+       width: 1.5em !important;
+       height: 1.5em !important;
+   }
+   #codeDiscipline th:nth-child(5)>div:first-child {
+       transform: translateX(-0.5em) translateY(0.5em) !important;
+   }
+   #codeDiscipline th:nth-child(5)>div:nth-child(2) {
+       transform: translateX(0.5em) translateY(0.5em) !important;
+   }
+   #codeDiscipline th:nth-child(5)>div:last-child {
+       transform: translateY(-0.5em) !important;
+   }
+   #codeDiscipline td:nth-child(3)>div,
+   #codeDiscipline td:nth-child(4)>div,
+   #codeDiscipline td:nth-child(5)>div {
+       width: 2em !important;
+       height: 2em !important; 
+   }
+   #codeDiscipline section:nth-child(6) table img {
+       display: none !important;
+   }
+
 
     /** Partie 6 **/
-    #codeDiscipline section:nth-child(6) div>article:first-child, 
-    #codeDiscipline section:nth-child(6) div>article:nth-child(2), 
-    #codeDiscipline section:nth-child(6) div>article:last-child {
+    #codeDiscipline section:nth-child(7) div>div:first-child, 
+    #codeDiscipline section:nth-child(7) div>div:nth-child(2), 
+    #codeDiscipline section:nth-child(7) div>div:last-child {
         grid-template-columns: 1fr !important;
         gap: 5px !important;
     }
-    #codeDiscipline section:nth-child(6) div article>iframe, 
-    #codeDiscipline section:nth-child(6) div article:last-child>img, 
-    #codeDiscipline section:nth-child(6) div article:nth-child(2)>img {
+    #codeDiscipline section:nth-child(7) div div>iframe, 
+    #codeDiscipline section:nth-child(7) div div:last-child>img, 
+    #codeDiscipline section:nth-child(7) div div:nth-child(2)>img {
         grid-column: 1!important;
         grid-row: 1!important;
         border-radius: 5px !important;
     }
-    #codeDiscipline section:nth-child(6) div article>p, 
-    #codeDiscipline section:nth-child(6) div article>p, 
-    #codeDiscipline section:nth-child(6) div article:nth-child(2)>p{
+    #codeDiscipline section:nth-child(7) div div>p, 
+    #codeDiscipline section:nth-child(7) div div>p, 
+    #codeDiscipline section:nth-child(7) div div:nth-child(2)>p{
         grid-column: 1!important;
         grid-row: 2!important;
-    }
-            
+    }        
 }
 
-/*//////////////////////////////////*/
-/* Section 1/2 : origine judo       */
-/*//////////////////////////////////*/
 
-#codeDiscipline section>article{
+/************************************************************/
+/*     Discipline - Partie 1 : origine judo               */
+/************************************************************/
+
+#codeDiscipline section:nth-child(2)>div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     place-items: center;
-}
+    margin-top: 5%;
 
-#codeDiscipline section>article:first-child>img {
+}
+#codeDiscipline section:nth-child(2) div img {
     grid-column: 1;
     grid-row: 1;
+    width: 100%;
+    border-radius: 10px;
 }
-
-#codeDiscipline section>article:first-child>div {
+#codeDiscipline section:nth-child(2) div>div {
     grid-column: 2 / 4;
     grid-row: 1;
     text-align: justify;
 }
 
-#codeDiscipline section>article:nth-child(2)>div {
+/************************************************************/
+/*     Discipline - Partie 2 : Le Judo aux Jeux Olympiques  */
+/************************************************************/
+
+#codeDiscipline section:nth-child(3)>div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    place-items: center;
+    margin-top: 5%;
+}
+#codeDiscipline section:nth-child(3) div img {
+    grid-column: 3;
+    grid-row: 1;    
+    width: 100%;
+    border-radius: 10px;
+}
+#codeDiscipline section:nth-child(3) div div {
     grid-column: 1 / 3;
     grid-row: 1;
     text-align: justify;
 }
 
-#codeDiscipline section>article:nth-child(2)>img {
-    grid-column: 3;
-    grid-row: 1;
-}
+/************************************************************/
+/*     Discipline - Partie 3 : règle du judo                */
+/************************************************************/
 
-#codeDiscipline section>article:nth-child(2)>img, 
-#codeDiscipline section>article:first-child>img {
-    width: 100%;
-    border-radius: 10px;
-
-}
-
-
-
-/*//////////////////////////////////*/
-/* Section 3 : règle du judo        */
-/*//////////////////////////////////*/
-
-#codeDiscipline section:nth-child(3) div {
+#codeDiscipline section:nth-child(4) div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     margin-bottom: 20px;
 }
-
-#codeDiscipline section:nth-child(3) article { 
-    border: 5px solid ;
-    border-image: linear-gradient(#3E405C, #8386C2, black, white) 1;
-    border-radius: 10px;
+#codeDiscipline section:nth-child(4) article { 
+    position: relative;
+    z-index: 1;
 }
-#codeDiscipline section:nth-child(3) div>article:last-child {
+#codeDiscipline section:nth-child(4) article::before { 
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    padding: 5px;
+    background: linear-gradient(to right, #3E405C, #8386C2);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0) border-box;
+    mask-composite: exclude;
+}
+#codeDiscipline section:nth-child(4) div>article:last-child {
     grid-column: 1 / -1;
 }
-
-#codeDiscipline section:nth-child(3) article:first-child, 
-#codeDiscipline section:nth-child(3) article:nth-child(2), 
-#codeDiscipline section:nth-child(3) article:nth-child(3), 
-#codeDiscipline section:nth-child(3) article:nth-child(4), 
-#codeDiscipline section:nth-child(3) article:nth-child(5) {
+#codeDiscipline section:nth-child(4) article:first-child, 
+#codeDiscipline section:nth-child(4) article:nth-child(2), 
+#codeDiscipline section:nth-child(4) article:nth-child(3), 
+#codeDiscipline section:nth-child(4) article:nth-child(4), 
+#codeDiscipline section:nth-child(4) article:nth-child(5) {
     padding: 1em;
     text-align: justify;
 }
 
+/************************************************************/
+/*     Discipline - Partie 4 : epreuve/catégorie            */
+/************************************************************/
 
-
-
-/*//////////////////////////////////*/
-/* Section 4 : epreuve/catégorie    */
-/*//////////////////////////////////*/
-
-#codeDiscipline section:nth-child(4) article {
-    border: 5px solid ;
-    border-image: linear-gradient(#3E405C, #8386C2, black, white) 1;
-    border-radius: 10px;
+#codeDiscipline section:nth-child(5) article {
+    position: relative;
+    z-index: 1;
 }
-
-#codeDiscipline section:nth-child(4)>div {
+#codeDiscipline section:nth-child(5) article::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    padding: 5px;
+    background: linear-gradient(to bottom, #3E405C, #8386C2);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0) border-box;
+    mask-composite: exclude;
+}
+#codeDiscipline section:nth-child(5)>div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
-
-#codeDiscipline section:nth-child(4) div>article:last-child, 
-#codeDiscipline section:nth-child(4) div>article:first-child, 
-#codeDiscipline section:nth-child(4) div>article:nth-child(2){
+#codeDiscipline section:nth-child(5) div>article:last-child, 
+#codeDiscipline section:nth-child(5) div>article:first-child, 
+#codeDiscipline section:nth-child(5) div>article:nth-child(2){
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     padding: 10%;
     place-items: center;
 }
-
-#codeDiscipline section:nth-child(4) div article:first-child>img, 
-#codeDiscipline section:nth-child(4) div article:nth-child(2)>img {
+#codeDiscipline section:nth-child(5) div article:first-child>img, 
+#codeDiscipline section:nth-child(5) div article:nth-child(2)>img {
     width: 100%;
     border-radius: 10px;
 }
-
-#codeDiscipline section:nth-child(4) div>article:last-child {
+#codeDiscipline section:nth-child(5) div>article:last-child {
     grid-column: 1 / 3;
     grid-row: 2;
     text-align: justify;
 }
-
-#codeDiscipline section:nth-child(4) div article>h2 {
+#codeDiscipline section:nth-child(5) div article>h2 {
     grid-column: 1;
     grid-row: 1;
 }
-
-#codeDiscipline section:nth-child(4) div article>ul, 
-#codeDiscipline section:nth-child(4) div article>p {
+#codeDiscipline section:nth-child(5) div article>ul, 
+#codeDiscipline section:nth-child(5) div article>p {
     grid-column: 1;
     grid-row: 2;
 }
-
-#codeDiscipline section:nth-child(4) div article>img {
+#codeDiscipline section:nth-child(5) div article>img {
     grid-column: 2;
     grid-row: 1 / 3;
 }
-
-#codeDiscipline section:nth-child(4) h1 {
+#codeDiscipline section:nth-child(5) h1 {
     text-align: center;
     margin-top: 0;
 }
 
-
-
-/*//////////////////////////////////*/
-/* Section 5 : tableau des medaille */
-/*//////////////////////////////////*/
+/************************************************************/
+/*     Discipline - Partie 5 : tableau des medaill          */
+/************************************************************/
 
 #codeDiscipline table {
     border-radius: 10px;
     padding: 2%;
     border-collapse: collapse;
 }
-
 #codeDiscipline table thead {
     background: linear-gradient(to top right, #8386C2, #3E405C);
     border: 3px solid #E3D2C1;
 }
-
-#codeDiscipline section:nth-child(5)>div {
+#codeDiscipline section:nth-child(6)>div {
     background: linear-gradient(to top right, #3E405C, #8386C2);
     padding: 5%;
     border-radius: 10px;
 }
-
 #codeDiscipline td {
     border-bottom: 3px solid #E3D2C1;
     border-left: none;
     border-right: none; 
 }
-
 #codeDiscipline th:nth-child(1)>div,
 #codeDiscipline th:nth-child(2)>div, 
 #codeDiscipline th:nth-child(3)>div, 
@@ -1143,7 +1163,6 @@ Caractéristiques de la section palmarès de la page sportif
 #codeDiscipline th:nth-child(5)>div {
     margin: auto; 
 }
-
 #codeDiscipline tbody tr:last-child td {
     border-bottom: none;
 }
@@ -1177,7 +1196,6 @@ Caractéristiques de la section palmarès de la page sportif
 #codeDiscipline th:nth-child(4)>div {
     background-color: #CD7F32;
 }
-
 #codeDiscipline th:nth-child(5) {
     position: relative;
     height: 8em;
@@ -1185,29 +1203,24 @@ Caractéristiques de la section palmarès de la page sportif
     align-items: center;
     justify-content: center;
 }
-
 #codeDiscipline th:nth-child(5) div {
     position: absolute;
     width: 2.5em;
     height: 2.5em;
     border-radius: 50%;
 }
-
 #codeDiscipline th:nth-child(5)>div:first-child {
     background: #D3C481;
     transform: translateX(-0.938em) translateY(0.938em);
 }
-
 #codeDiscipline th:nth-child(5)>div:nth-child(2) {
     background: #C0C0C0;
     transform: translateX(0.938em) translateY(0.936em);
 }
-
 #codeDiscipline th:nth-child(5)>div:last-child {
     background: #CD7F32;
     transform: translateY(-0.938em);
 }
-
 #codeDiscipline td:nth-child(3)>div, 
 #codeDiscipline td:nth-child(4)>div, 
 #codeDiscipline td:nth-child(5)>div {
@@ -1226,58 +1239,53 @@ Caractéristiques de la section palmarès de la page sportif
 #codeDiscipline td {
     text-align: center;
 }
-
 #codeDiscipline th:first-child, 
 #codeDiscipline td:nth-child(2), 
 #codeDiscipline td:nth-child(6){
     color: white;
 }
-
-#codeDiscipline section:nth-child(5) table img {
+#codeDiscipline section:nth-child(6) table img {
     border-radius: 10px;
 }
 
-/************************************/
-/* Section 6 : moment fort          */
-/************************************/
+/************************************************************/
+/*     Discipline - Partie 6 : moment fort                  */
+/************************************************************/
 
-#codeDiscipline section:nth-child(6) div>article:first-child, 
-#codeDiscipline section:nth-child(6) div>article:nth-child(2), 
-#codeDiscipline section:nth-child(6) div>article:last-child {
+#codeDiscipline section:nth-child(7) div>div:first-child, 
+#codeDiscipline section:nth-child(7) div>div:nth-child(2), 
+#codeDiscipline section:nth-child(7) div>div:last-child {
     padding: 1em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     place-items: center;
 }
-
-#codeDiscipline section:nth-child(6) div article>iframe, 
-#codeDiscipline section:nth-child(6) div article:last-child>img {
+#codeDiscipline section:nth-child(7) div div>iframe, 
+#codeDiscipline section:nth-child(7) div div:last-child>img {
     grid-column: 1 / 3;
     grid-row: 1;
 }
-#codeDiscipline section:nth-child(6) div article>p, 
-#codeDiscipline section:nth-child(6) div article>p{
+#codeDiscipline section:nth-child(7) div div>p, 
+#codeDiscipline section:nth-child(7) div div>p{
     grid-column: 3;
     grid-row: 1;
     text-align: justify;
 }
-
-#codeDiscipline section:nth-child(6) div article:nth-child(2)>img {
+#codeDiscipline section:nth-child(7) div div:nth-child(2)>img {
     grid-column: 2 / 4;
     grid-row: 1;
 }
-
-#codeDiscipline section:nth-child(6) div article:nth-child(2)>p {
+#codeDiscipline section:nth-child(7) div div:nth-child(2)>p {
     grid-column: 1;
     grid-row: 1;
     text-align: justify;
 }
-
-#codeDiscipline section:nth-child(6) div img, 
-#codeDiscipline section:nth-child(6) div iframe {
+#codeDiscipline section:nth-child(7) div img, 
+#codeDiscipline section:nth-child(7) div iframe {
     width: 100%;
     border-radius: 10px;
+    border: none;
 }
 
 /*********************************************************************************************************************************/
