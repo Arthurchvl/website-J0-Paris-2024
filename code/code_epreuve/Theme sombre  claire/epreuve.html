@@ -222,27 +222,34 @@
 
 
 <script>
-    document.getElementById('toggle-background').addEventListener('click', function() {
-        // Changer le fond de la page
-        document.body.style.backgroundColor = document.body.style.backgroundColor === 'black' ? 'white' : 'black';
-        document.body.style.color = document.body.style.color === 'white' ? 'black' : 'white'; // Change le texte en blanc ou noir
+document.getElementById('toggle-background').addEventListener('click', function() {
+    // Changer le fond de la page
+    const isBlack = document.body.style.backgroundColor === 'black';
+    document.body.style.backgroundColor = isBlack ? 'white' : 'black';
+    document.body.style.color = isBlack ? 'black' : 'white'; // Change le texte en blanc ou noir
 
-        // Changer le fond des articles
-        const articles = document.querySelectorAll('article, section');
-        articles.forEach(article => {
-            article.style.backgroundColor = article.style.backgroundColor === 'gray' ? '#e3d2c1' : 'gray';
-        });
-
-            // Changer le fond du nav
-        const nav = document.querySelector('nav');
-        nav.style.backgroundColor = isBlack ? 'white' : 'black';
-        nav.style.color = isBlack ? 'black' : 'white'; // Change le texte en blanc ou noir
-
-        // Changer le fond des divs
-        const divs = document.querySelectorAll('div');
-        divs.forEach(div => {
-            div.style.backgroundColor = isBlack ? 'white' : 'black';
-            div.style.color = isBlack ? 'black' : 'white'; // Change le texte en blanc ou noir
-        });
+    // Changer le fond des articles
+    const articles = document.querySelectorAll('article, section');
+    articles.forEach(article => {
+        article.style.backgroundColor = article.style.backgroundColor === 'gray' ? '#e3d2c1' : 'gray';
     });
+
+    // Changer le fond du nav
+    const nav = document.querySelector('nav');
+    nav.style.backgroundColor = isBlack ? 'white' : 'black';
+    nav.style.color = isBlack ? 'black' : 'white'; // Change le texte en blanc ou noir
+
+    // Changer le fond du dernier div
+    const lastDiv = document.querySelector('section:last-of-type');
+    if (lastDiv) {
+        lastDiv.style.backgroundColor = isBlack ? 'white' : 'black'; // Dernier div blanc si fond noir, noir si fond blanc
+        lastDiv.style.color = isBlack ? 'black' : 'white'; // Texte noir si fond blanc, blanc si fond noir
+    }
+
+    const firstDiv = document.querySelector('aside > div:nth-child(1)');
+    if (firstDiv) {
+        firstDiv.style.backgroundColor = article.style.backgroundColor === 'gray' ? '#e3d2c1' : 'gray';
+        firstDiv.style.color = isBlack ? 'black' : 'white'; // Texte noir si fond blanc, blanc si fond noir
+    }
+});
 </script>
