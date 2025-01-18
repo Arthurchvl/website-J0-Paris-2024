@@ -1449,6 +1449,260 @@ Epreuve
     }
 }
 
+/************************************/
+/* Page acceuil           */
+/************************************/
+
+/* styles.css */
+#codeAcceuil body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+#codeAcceuil header {
+    background-color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#codeAcceuil h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-size: 24px;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+#codeAcceuil main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#codeAcceuil .large-image {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+#codeAcceuil section{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    width: 100%;
+    margin: 20px;
+    padding: 2.5em;
+}
+
+#codeAcceuil section:first-of-type{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+#codeAcceuil section:first-of-type h1{
+    width: 100%;
+    text-align: center;
+}
+
+
+#codeAcceuil figure {
+    background-color: #fff;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+#codeAcceuil figure img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+#codeAcceuil figcaption {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
+#codeAcceuil .carousel {
+    position: relative;
+    max-width: 960px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #fff;
+}
+#codeAcceuil .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+#codeAcceuil .carousel-images img {
+    max-width: 100%;
+    height: auto;
+}
+#codeAcceuil .caption {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 10px;
+}
+#codeAcceuil .carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+#codeAcceuil .carousel-buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.2em;
+}
+#codeAcceuil .carousel-buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+#codeAcceuil .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+#codeAcceuil .card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #e8d7c6;
+    margin: 10px 0;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#codeAcceuil .card img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+#codeAcceuil .card p {
+    font-size: 18px;
+    margin: 0;
+    text-align: left;
+}
+
+
+
+#codeAcceuil footer {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+#codeAcceuil footer aside {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 14px;
+    width: 80%;
+    justify-content: space-between;
+}
+
+#codeAcceuil footer nav {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#codeAcceuil footer aside a {
+    width: 200px;
+    height: 200px;
+}
+
+#codeAcceuil footer nav h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#codeAcceuil nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+#codeAcceuil footer nav ul li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+#codeAcceuil footer div>a {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+#codeAcceuil footer div {
+    align-items: center;
+    justify-content: space-between;
+}
+
+#codeAcceuil footer>p, footer>div {
+    text-align: center;
+}
+
+#codeAcceuil footer a {
+    text-decoration: none;
+    color: white;
+}
+
+#codeAcceuil table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+
+#codeAcceuil th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+
+  #codeAcceuil th {
+    background-color: #f4f4f4;
+  }
 
 
 
