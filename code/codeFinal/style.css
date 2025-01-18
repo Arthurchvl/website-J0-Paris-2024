@@ -12,8 +12,8 @@ body {
 }
 
 /* Pour les écrans de téléphone (428x926) */
-@media screen and (max-width: 428px) {
-    body {
+@media screen and (max-width: 768px) {
+    #codeSportif body {
         font-size: 14px;
         margin: 0;
         padding: 0;
@@ -25,7 +25,7 @@ body {
         padding: 5px;
     }
 
-    #codeSportif main>section:nth-child(2) table {
+    #codeSportif main>section:nth-child(3) table {
         width: 100%;
         font-size: 12px;
     }
@@ -37,14 +37,25 @@ body {
 
     footer div>a {
         margin: 5px;
+        align-items: center;
     }
 
-    #codeSportif main>section:first-of-type{ /*Responsivité de la section biographie et carte identité*/
-        flex-direction: column ;
+    #codeSportif main>section:nth-child(2)  article,
+    #codeSportif main>section:nth-child(2)  aside{
+        width: 100% !important;
+        padding: auto !important;
+        margin: auto !important;
+        align-items: center;
+        align-self: middle;
     }
 
-    #codeSportif main section:last-child { /*Responsivité de la section actualités et réseaux sociaux*/
-        flex-direction: column;
+    #codeSportif main section:last-child aside:first-of-type,
+    #codeSportif main section:last-child aside:last-child{
+        width: 100% !important;
+        padding: auto !important;
+        margin: auto !important;
+        align-items: center;
+        align-self: middle;
     }
 }
 /*********************************************
@@ -413,7 +424,7 @@ Caractéristiques de la section actualités + réseaux sociaux de la page sporti
 *****************************************************************************/
 #codeSportif main section:last-child aside a {
     display: inline-block;
-    width: 50%;
+    width: 25%;
     margin: 0px;
     padding: 0px;
     text-decoration: none;
@@ -424,25 +435,6 @@ Caractéristiques de la section actualités + réseaux sociaux de la page sporti
 #codeSportif main section:last-child h2{
     text-align: center;
     width: 100%;
-}
-
-#codeSportif main section:last-child aside:last-child {
-    text-align: center;
-    text-decoration: none;
-    color: black;
-    border-radius: 10px;
-    padding: 10px;
-    padding-left: 0px;
-    display: flex;
-    flex-direction: row;
-}
-
-#codeSportif main section:last-child {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    width: 100%;
-    justify-content: space-between;
 }
 
 #codeSportif main section:last-child img {
@@ -456,53 +448,77 @@ Caractéristiques de la section actualités + réseaux sociaux de la page sporti
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-#codeSportif main section:last-child{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    background-color: white;
-    margin: 0px;
-}
-
 #codeSportif main section:last-child aside:last-child a:last-child{
     text-align: center;
     display: block;
     width: 100%;
 }
 
-#codeSportif main>section:last-child>h2 {
-    width: 0px;
-    padding: 0px;
+#codeSportif main section:last-child{
+    overflow: auto;
+    background-color: white;
     margin: 0px;
-    color: white;
+    padding: 0px;
+}
+
+#codeSportif main>section:last-child>h2 {
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    margin: 0px;
+}
+
+#codeSportif main section:last-child aside:first-of-type{
+    background-color: #e3d2c1;
+    width: 45%;
+    float: left;
+    margin-left: 0px;
+}
+
+#codeSportif main section:last-child aside:last-child {
+    float: right;
+    width: 45%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: row;
+    background-color: #e3d2c1;
 }
 
 /****************************************************************************
 Caractéristiques de la section biographie + fiche identité de la page sportif
 ****************************************************************************/
-#codeSportif main > section:first-of-type {
-    display: flex;
-    flex-direction: row; /* Les éléments sont alignés côte à côte par défaut */
-    flex-wrap: nowrap;
-    gap: 20px; /* Espace entre les éléments */
+#codeSportif main>section:nth-child(2) {
+    overflow: auto;
+    width: auto;
     background-color: white;
 }
 
-#codeSportif main > section:first-of-type article,
-#codeSportif main > section:first-of-type aside {
-    flex: 1; /* Chaque élément prend une part égale de l'espace disponible */
+#codeSportif main>section:nth-child(2) h2 {
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    margin: 0px;
 }
 
-#codeSportif main>section:first-of-type article {
+#codeSportif main>section:nth-child(2)  article {
+    float: left;
     width: 45%;
-    height: 100%;
+    height: auto;
     background-color: #e3d2c1;
     border-radius: 10px;
     margin: 0px;
     padding: 100px 10px;
 }
 
-#codeSportif main>section:first-of-type aside {
+#codeSportif main>section:nth-child(2)  aside {
+    float: right;
     width: 45%;
     height: auto;
     background-color: white;
@@ -510,89 +526,87 @@ Caractéristiques de la section biographie + fiche identité de la page sportif
     flex-direction: column;
     flex-wrap: nowrap;
     margin: 0px;
-    padding: 10px;
+    padding: 0px;
+    top: 0%;
 }
 
-#codeSportif main>section:first-of-type article h2 {
-    text-align: center;
+#codeSportif main>section:nth-child(2)  article h2 {
+    text-align: middle;
     margin-top: 20px;
 }
 
-#codeSportif main>section:first-of-type aside img {
+#codeSportif main>section:nth-child(2)  aside img {
     height: 50%;
     width: 100%;
+    top: 0%;
 }
 
-#codeSportif main>section:first-of-type aside li {
+#codeSportif main>section:nth-child(2)  aside li {
     margin: 10px;
-}
-
-#codeSportif main>section:first-of-type>h2 {
-    width: 0px;
-    padding: 0px;
-    margin: 0px;
 }
 
 /*********************************************************
 Caractéristiques de la section palmarès de la page sportif
 *********************************************************/
-#codeSportif main>section:nth-child(2){
+#codeSportif main>section:nth-child(3){
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
 }
 
-#codeSportif main>section:nth-child(2) h2{
+#codeSportif main>section:nth-child(3) h2{
     width: 100%;
     text-align: center;
 }
 
-#codeSportif main>section:nth-child(2) table {
+#codeSportif main>section:nth-child(3) table {
     border-spacing: 1em;
     padding-right: 3em;
     width: 50%;
     padding-left: 1em;
 }
 
-#codeSportif main>section:nth-child(2) thead{
+#codeSportif main>section:nth-child(3) thead{
     text-align: center;
     font-weight: bold;
 }
 
-#codeSportif main>section:nth-child(2) th{
+#codeSportif main>section:nth-child(3) th{
     text-align: left;
     text-decoration: none;
     font-weight: normal;
 }
 
-#codeSportif main>section:nth-child(2) td{
+#codeSportif main>section:nth-child(3) td{
     margin-top: 20px;
     text-align: center;
 } 
 
-#codeSportif main>section:nth-child(2) tbody tr td:first-of-type{
+#codeSportif main>section:nth-child(3) tbody tr td:first-of-type{
     background-color: #d3c481;
     border-radius: 10px;
     padding: 10px;
     width: 20%;
 }
 
-#codeSportif main>section:nth-child(2) tbody tr td:nth-of-type(2){
+#codeSportif main>section:nth-child(3) tbody tr td:nth-of-type(2){
     background-color: #c0c0c0;
     border-radius: 10px;
     padding: 10px;
     width: 20%;
 }
 
-#codeSportif main>section:nth-child(2) tbody tr td:nth-of-type(3){
+#codeSportif main>section:nth-child(3) tbody tr td:nth-of-type(3){
     background-color: #cd7f32;
     border-radius: 10px;
     padding: 10px;
     width: 20%;
 }
 
-#codeSportif main>section:nth-child(2) img {
+#codeSportif main>section:nth-child(3) img {
+    width: 30%;
+    height: auto;
     margin: 0em;
     padding-right: 0em;
 }
@@ -812,7 +826,7 @@ body[data-theme='dark'] header button:hover {
 
 /* Téléphones (max-width: 767px) */
 @media screen and (max-width: 767px) {
-    body {
+    #codeDiscpline body {
         font-size: 14px;
         padding: 0;
     }
