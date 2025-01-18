@@ -1363,7 +1363,55 @@ Epreuve
     #codeEpreuve span:before {
         border-radius: 50%;
     }
+
+    #codeEpreuve header div img {
+        display: none;
+    }
+
+    #codeEpreuve header input {
+        display: none;
+    }
+    
+    #codeEpreuve header label {
+        display: none; /* Ajouté */
+    }
+    
+    #codeEpreuve header nav {
+        display: none; /* Ajouté */
+    }
+    
+    #codeEpreuve header div img {
+        display: none; /* Ajouté */
+    }
+    
+    #codeEpreuve header p {
+        display: none; /* Ajouté */
+    }
+    
+    #codeEpreuve header ul:nth-of-type(1) {
+        display: none; /* Ajouté */
+    }
+    
+    #codeEpreuve header ul:nth-of-type(2) {
+        display: none; /* Ajouté */
+    }
+    
+    #codeEpreuve header ul:nth-of-type(1) li {
+        display: none; /* Ajouté */
+    }
+    
+    #codeEpreuve header ul:nth-of-type(1) li a {
+        display: none; /* Ajouté */
+    }
+    
+    /* Les règles pour l'animation et les transitions ne sont pas nécessaires si tout est caché */
+
+
+
+
+
 }
+
 @media screen and (max-width: 767px)  { 
     
     #codeEpreuve header input {
