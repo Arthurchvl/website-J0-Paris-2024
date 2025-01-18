@@ -304,61 +304,16 @@ body[data-theme='dark'] header button:hover {
     display: block;
 }
 
-#codeSportif label {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
+#codeSportif header div button{
+    grid-column: 3;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    height: auto;
+    margin: auto;
 }
-
-#codeSportif label input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-#codeSportif span {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: .4s;
-}
-
-#codeSportif span:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    transition: .4s;
-}
-
-#codeSportif input:checked + span {
-    background-color: black;
-}
-
-#codeSportif input:focus + span {
-    box-shadow: 0 0 1px black;
-}
-
-#codeSportif input:checked + span:before {
-    transform: translateX(26px);
-}
-
-#codeSportif span {
-    border-radius: 34px;
-}
-
-#codeSportif span:before {
-    border-radius: 50%;
-}
-
 
 /*******************************************************
 Caractéristiques des sections du main de la page sportif
@@ -723,61 +678,43 @@ Caractéristiques de la section palmarès de la page sportif
     top: 0;
 }
 
-#codeDiscipline label {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-}
+/*mode sombre*/
 
-#codeDiscipline label input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-#codeDiscipline span {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: .4s;
-}
-
-#codeDiscipline span:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
+/* Style du bouton */
+#codeDiscipline header button {
     background-color: white;
-    transition: .4s;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: 100;
+    position: relative;
 }
 
-#codeDiscipline input:checked + span {
+#codeDiscipline button:hover {
     background-color: black;
+    color: white;
 }
 
-#codeDiscipline input:focus + span {
-    box-shadow: 0 0 1px black;
-}
+  /* Mode sombre */
+body[data-theme='dark'] {
+    background-color: black;
+    color: white;
+  }
 
-#codeDiscipline input:checked + span:before {
-    transform: translateX(26px);
-}
+body[data-theme='dark'] header {
+    background-color: #444;
+  }
 
-#codeDiscipline span {
-    border-radius: 34px;
-}
+body[data-theme='dark'] header button {
+    background-color: blue;
+  }
 
-#codeDiscipline span:before {
-    border-radius: 50%;
-}
+body[data-theme='dark'] header button:hover {
+    background-color: #666;
+  }
 
+/*menu deroulant*/
 
 
 #codeDiscipline header nav ul {
@@ -1376,8 +1313,8 @@ Epreuve
 }
 
 #codeEpreuve header div img {
-    width: 40px;
-    margin-left: 80%;
+    width: 10%;
+    margin-left: 90%;
 }
 
 #codeEpreuve header p {
@@ -1619,4 +1556,256 @@ Epreuve
         grid-column: 1;
         grid-row: 3;
     }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
+
+/*********************************************************
+Page Index
+*********************************************************/
+
+#codeAcceuil body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+#codeAcceuil header {
+    background-color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#codeAcceuil h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-size: 24px;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+#codeAcceuil main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#codeAcceuil .large-image {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+#codeAcceuil section{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    width: 100%;
+    margin: 20px;
+    padding: 2.5em;
+}
+
+#codeAcceuil section:first-of-type{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+#codeAcceuil section:first-of-type h1{
+    width: 100%;
+    text-align: center;
+}
+
+
+#codeAcceuil figure {
+    background-color: #fff;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+#codeAcceuil figure img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+#codeAcceuil figcaption {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
+#codeAcceuil .carousel {
+    position: relative;
+    max-width: 960px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #fff;
+}
+#codeAcceuil .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+#codeAcceuil .carousel-images img {
+    max-width: 100%;
+    height: auto;
+}
+#codeAcceuil .caption {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 10px;
+}
+#codeAcceuil .carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+#codeAcceuil .carousel-buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.2em;
+}
+#codeAcceuil .carousel-buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#codeAcceuil .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+#codeAcceuil .card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #e8d7c6;
+    margin: 10px 0;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#codeAcceuil .card img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+#codeAcceuil .card p {
+    font-size: 18px;
+    margin: 0;
+    text-align: left;
+}
+
+#codeAcceuil footer {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+#codeAcceuil footer aside {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 14px;
+    width: 80%;
+    justify-content: space-between;
+}
+
+#codeAcceuil footer nav {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#codeAcceuil footer aside a {
+    width: 200px;
+    height: 200px;
+}
+
+#codeAcceuil footer nav h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#codeAcceuil nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+#codeAcceuil footer nav ul li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+#codeAcceuil footer div>a {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+#codeAcceuil footer div {
+    align-items: center;
+    justify-content: space-between;
+}
+
+#codeAcceuil footer>p, footer>div {
+    text-align: center;
+}
+
+#codeAcceuil footer a {
+    text-decoration: none;
+    color: white;
+}
+
+#codeAcceuil table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  th {
+    background-color: #f4f4f4;
+  }
+
+
+
