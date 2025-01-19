@@ -1781,13 +1781,6 @@ Page Index
     color: #333;
 }
 
-#codeAcceuil header {
-    background-color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    border-bottom: 1px solid #ddd;
-}
-
 #codeAcceuil h1 {
     margin: 0;
     font-size: 1.8rem;
@@ -1800,7 +1793,7 @@ Page Index
 #codeAcceuil main {
     padding: 1rem;
     max-width: 1200px;
-    margin: auto;
+    margin: 2.5em;
 }
 
 #codeAcceuil .large-image {
@@ -1811,7 +1804,6 @@ Page Index
 }
 
 #codeAcceuil section{
-    display: flex;
     gap: 1rem;
     justify-content: space-between;
     background-color: #e3d2c1;
@@ -1853,7 +1845,6 @@ Page Index
     font-size: 0.9rem;
     color: #555;
 }
-
 
 #codeAcceuil .carousel {
     position: relative;
@@ -2066,6 +2057,84 @@ Page Index
         font-size: 10px;
     }
 }
+
+#codeAcceuil header div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 38%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 101;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    height: 15%;
+}
+
+#codeAcceuil header div nav {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+    max-width: 100%;
+    min-width: 0;
+    height: 100%;
+}
+
+#codeAcceuil header div img {
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+}
+
+#codeAcceuil header>img{
+    width: auto;
+    margin: 0px;
+    padding: 0%;
+}
+
+#codeSportif header div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 38%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 101;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    height: 15%;
+}
+
+#codeSportif header div nav {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+    max-width: 100%;
+    min-width: 0;
+    height: 100%;
+}
+
+#codeSportif header div img {
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+}
+
+#codesportif header>img{
+    width: auto;
+    margin: 0px;
+    padding: 0%;
+}
+
+
 
 
 
