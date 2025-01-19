@@ -154,6 +154,7 @@ span:before {
     border-radius: 50%;
 }
 
+
 /************************************************************/
 /*     Toute les pages - Globale                            */
 /************************************************************/
@@ -1254,44 +1255,15 @@ Epreuve
 Page Index
 *********************************************************/
 
-#codeAcceuil body {
-    font-family: Arial, sans-serif;
-    margin: 0 auto;
-    padding: 0;
-    background-color: #ffffff;
-    color: #333;
-}
 
-#codeAcceuil h1 {
-    margin: 0;
-    font-size: 1.8rem;
-    font-size: 24px;
-    margin-bottom: 30px;
-    width: 100%;
-    text-align: center;
-}
 
-#codeAcceuil main {
-    padding: 1rem;
-    max-width: 1200px;
-    margin: 2.5em;
-}
+
 
 #codeAcceuil .large-image {
     display: block;
     width: 100%;
     border-radius: 10px;
     margin-bottom: 2rem;
-}
-
-#codeAcceuil section{
-    gap: 1rem;
-    justify-content: space-between;
-    background-color: #e3d2c1;
-    border-radius: 10px;
-    width: 100%;
-    margin: 20px;
-    padding: 2.5em;
 }
 
 #codeAcceuil section:first-of-type{
@@ -1401,77 +1373,11 @@ Page Index
     text-align: left;
 }
 
-#codeAcceuil footer {
-    background-color: black;
-    color: white;
-    font-size: 16px;
-    width: 100%;
-    padding: 10px 0;
-    margin: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-}
 
-#codeAcceuil footer aside {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    margin: auto;
-    margin-top: 20px;
-    font-size: 14px;
-    width: 80%;
-    justify-content: space-between;
-}
 
-#codeAcceuil footer nav {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
 
-#codeAcceuil footer aside a {
-    width: 200px;
-    height: 200px;
-}
 
-#codeAcceuil footer nav h3 {
-    margin-bottom: 10px;
-    font-size: 18px;
-    font-weight: bold;
-}
 
-#codeAcceuil nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-#codeAcceuil footer nav ul li {
-    margin-bottom: 5px;
-    font-size: 14px;
-}
-
-#codeAcceuil footer div>a {
-    width: 24px;
-    height: 24px;
-    margin: 0 10px;
-    vertical-align: middle;
-    text-decoration: none;
-}
-
-#codeAcceuil footer div {
-    align-items: center;
-    justify-content: space-between;
-}
-
-#codeAcceuil footer>p, footer>div {
-    text-align: center;
-}
-
-#codeAcceuil footer a {
-    text-decoration: none;
-    color: white;
-}
 
 #codeAcceuil table {
     width: 100%;
@@ -1516,28 +1422,13 @@ Page Index
     #codeAcceuil .carousel {
         max-width: 100%;
     }
-
-    #codeAcceuil footer nav ul li {
-        font-size: 12px;
-    }
-
-    #codeAcceuil footer nav h3 {
-        font-size: 16px;
-    }
 }
 
 @media (max-width: 480px) {
-    #codeAcceuil h1 {
-        font-size: 1.5rem;
-    }
-
     #codeAcceuil .card p {
         font-size: 16px;
     }
 
-    #codeAcceuil footer nav ul li {
-        font-size: 10px;
-    }
 }
 
 #codeAcceuil header div {
@@ -1586,7 +1477,7 @@ Page Index
 /*fond qui apparait*/
 #codeAcceuil main nav {
     position: fixed;
-    top: -20em;
+    top: 0;
     left: 0;
     width: 100%;
     background: linear-gradient(to right, #3E405C, #8386C2);
