@@ -72,40 +72,7 @@
                         </div>
                     </div>
         </section>
-        <script>
-            const carousels = {};
-
-            function updateCarousel(carouselId) {
-                const carousel = carousels[carouselId];
-                const images = carousel.images;
-                const offset = -carousel.currentIndex * 100;
-                images.style.transform = `translateX(${offset}%)`;
-            }
-
-            function nextSlide(carouselId) {
-                const carousel = carousels[carouselId];
-                carousel.currentIndex = (carousel.currentIndex + 1) % carousel.totalImages;
-                updateCarousel(carouselId);
-            }
-
-            function prevSlide(carouselId) {
-                const carousel = carousels[carouselId];
-                carousel.currentIndex = (carousel.currentIndex - 1 + carousel.totalImages) % carousel.totalImages;
-                updateCarousel(carouselId);
-            }
-
-            document.querySelectorAll('.carousel').forEach((carousel) => {
-                const carouselId = carousel.id;
-                const images = carousel.querySelector('.carousel-images');
-                const totalImages = images.children.length;
-
-                carousels[carouselId] = {
-                    images: images,
-                    totalImages: totalImages,
-                    currentIndex: 0
-                };
-            });
-        </script>
+        
         <section id="Parcours">
             <h2>Parcours de la flamme olympique</h2>
             <img src="images/parcours_flamme_olympique.png" alt="">
@@ -228,15 +195,50 @@
             <h2>Cérémonie de Cloture</h2>
                 <div class="carousel" id="carousel-2">
                     <div class="carousel-images">
-                        <img src="images/ceremonie_cloture.png" alt="cérémonie de Cloture">
-                        <img src="images/cl" alt="Image 5">
-                        <img src="images/image6.png" alt="Image 6">
+                        <img src="images/ceremonie_cloture.png" alt="cérémonie de Cloture1">
+                        <img src="images/cloture2.png" alt="cérémonie de Cloture2">
+                        <img src="images/cloture3.png" alt="cérémonie de Cloture3">
                     </div>
                     <div class="carousel-buttons">
                         <button onclick="prevSlide('carousel-2')">&#8249;</button>
                         <button onclick="nextSlide('carousel-2')">&#8250;</button>
                     </div>
                 </div>
+
+                <script>
+                    const carousels = {};
+        
+                    function updateCarousel(carouselId) {
+                        const carousel = carousels[carouselId];
+                        const images = carousel.images;
+                        const offset = -carousel.currentIndex * 100;
+                        images.style.transform = `translateX(${offset}%)`;
+                    }
+        
+                    function nextSlide(carouselId) {
+                        const carousel = carousels[carouselId];
+                        carousel.currentIndex = (carousel.currentIndex + 1) % carousel.totalImages;
+                        updateCarousel(carouselId);
+                    }
+        
+                    function prevSlide(carouselId) {
+                        const carousel = carousels[carouselId];
+                        carousel.currentIndex = (carousel.currentIndex - 1 + carousel.totalImages) % carousel.totalImages;
+                        updateCarousel(carouselId);
+                    }
+        
+                    document.querySelectorAll('.carousel').forEach((carousel) => {
+                        const carouselId = carousel.id;
+                        const images = carousel.querySelector('.carousel-images');
+                        const totalImages = images.children.length;
+        
+                        carousels[carouselId] = {
+                            images: images,
+                            totalImages: totalImages,
+                            currentIndex: 0
+                        };
+                    });
+                </script>
         </section>
         <section id="Parcours2">
             <h2>Lien du site des Jeux Paralympiques</h2>
