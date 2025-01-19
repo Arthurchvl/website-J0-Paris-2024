@@ -357,12 +357,11 @@ Caractéristiques des vidéos de la page sportif
 Caractéristiques de la section performances de carrière de la page sportif
 *************************************************************************/
 #codeSportif main aside {
-    width: 100%;
     background-color: #e3d2c1;
     color: black;
     border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
+    margin: 1%;
+    padding: 2%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -372,10 +371,10 @@ Caractéristiques de la section performances de carrière de la page sportif
     background-color: #4b4747;
     color: white;
     border-radius: 10px;
-    padding: 20px;
+    padding: 2%;
     box-shadow: 5px 5px 5px #e3d2c1 inset;
     width: 70%;
-    margin-right: 0px;
+
 }
 
 #codeSportif main aside div article {
