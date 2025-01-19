@@ -84,3 +84,19 @@ function changerCouleurFond() {
 
 // Ajout de l'événement pour changer la couleur de fond et de texte de la page
 document.getElementById('toggle-background_mls').addEventListener('click', changerCouleurFond);
+
+
+// Récupérer la barre de navigation
+const nav = document.querySelector("main nav");
+
+// Récupérer la hauteur de l'image (le header)
+const headerHeight = document.querySelector("header:first-child img").offsetHeight;
+
+// Ajouter une classe "visible" lorsque l'utilisateur défile au-delà de l'image
+window.addEventListener("scroll", () => {
+  if (window.scrollY > headerHeight) {
+    nav.classList.add("visible");
+  } else {
+    nav.classList.remove("visible");
+  }
+});

@@ -680,7 +680,7 @@ Caractéristiques de la section palmarès de la page sportif
 /*     header     */
 /******************/
 
-#codeDiscipline header div {
+header div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 38%;
@@ -695,8 +695,7 @@ Caractéristiques de la section palmarès de la page sportif
     padding-bottom: 0.5%;
     height: 15%;
 }
-
-#codeDiscipline header div nav {
+header div nav {
     grid-column: 1;
     grid-row: 1;
     justify-self: center;
@@ -705,14 +704,14 @@ Caractéristiques de la section palmarès de la page sportif
     min-width: 0;
     height: 100%;
 }
-#codeDiscipline header div img {
+header div img {
     grid-column: 2;
     grid-row: 1;
     width: 75%;
 
   
 }
-#codeDiscipline header div button{
+header div button{
     grid-column: 3;
     grid-row: 1;
     display: flex;
@@ -724,7 +723,7 @@ Caractéristiques de la section palmarès de la page sportif
 
 
 /*fond qui apparait*/
-#codeDiscipline main nav {
+main nav {
     position: fixed;
     top: -20em;
     left: 0;
@@ -738,11 +737,11 @@ Caractéristiques de la section palmarès de la page sportif
     z-index: 3;
 }
 
-#codeDiscipline nav.visible {
+main>nav.visible {
     top: 0;
 }
 
-#codeDiscipline header nav ul {
+header nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -751,26 +750,26 @@ Caractéristiques de la section palmarès de la page sportif
     border-radius: 10px;
 }
 
-#codeDiscipline header nav ul li {
+header nav ul li {
     position: relative;
     background-color: white;
     border-radius: 10px;
 
 }
 
-#codeDiscipline header nav ul li a {
+header nav ul li a {
     text-decoration: none;
     color: black;
     padding: 10px 20px;
     display: block;
 }
 
-#codeDiscipline header nav ul li a:hover {
+header nav ul li a:hover {
     background-color: #C0C0C0;
     border-radius: 10px;
 }
 
-#codeDiscipline header nav ul li ul {
+header nav ul li ul {
     display: none;
     position: absolute;
     top: 100%;
@@ -782,40 +781,40 @@ Caractéristiques de la section palmarès de la page sportif
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-#codeDiscipline header nav ul li ul li a {
+header nav ul li ul li a {
     padding: 10px 20px;
     white-space: nowrap;
 }
 
-#codeDiscipline header nav ul li ul li a:hover {
+header nav ul li ul li a:hover {
     background-color: white;
 }
 
-#codeDiscipline header nav ul li:hover ul {
+header nav ul li:hover ul {
     display: block;
 }
 
-#codeDiscipline header:first-child>img {
+header:first-child>img {
     width: 100%;
     height: auto;
     display: block;
 }
 
 
-#codeDiscipline label {
+label {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
 }
 
-#codeDiscipline label input {
+label input {
     opacity: 0;
     width: 0;
     height: 0;
 }
 
-#codeDiscipline span {
+span {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -826,7 +825,7 @@ Caractéristiques de la section palmarès de la page sportif
     transition: .4s;
 }
 
-#codeDiscipline span:before {
+span:before {
     position: absolute;
     content: "";
     height: 26px;
@@ -837,28 +836,30 @@ Caractéristiques de la section palmarès de la page sportif
     transition: .4s;
 }
 
-#codeDiscipline input:checked + span {
+input:checked + span {
     background-color: black;
 }
 
-#codeDiscipline input:focus + span {
+input:focus + span {
     box-shadow: 0 0 1px black;
 }
 
-#codeDiscipline input:checked + span:before {
+input:checked + span:before {
     transform: translateX(26px);
 }
 
-#codeDiscipline span {
+span {
     border-radius: 34px;
 }
 
-#codeDiscipline span:before {
+span:before {
     border-radius: 50%;
 }
 
 
-
+/************************************************************/
+/*     Toute les pages - Globale                            */
+/************************************************************/
 
 
 
@@ -1030,7 +1031,7 @@ Caractéristiques de la section palmarès de la page sportif
 
 
 /************************************************************/
-/*     Discipline - Partie 1 : origine judo               */
+/*     Discipline - Partie 1 : origine judo                 */
 /************************************************************/
 
 #codeDiscipline section:nth-child(2)>div {
@@ -1348,238 +1349,7 @@ Epreuve
     padding: 0;
 }
 
-/* Header */
-#codeEpreuve header {
-    position: relative;
-    text-align: center;
-    color: white;
-}
 
-#codeEpreuve header h1 {
-    background-image: url("images/fond_header.webp");
-    background-size: cover;
-    background-position: center;
-    padding: 6em 0;
-    margin: 0;
-    font-size: 3em;
-    font-weight: bold;
-}
-
-@media screen and (min-width: 767px){
-    #codeEpreuve label {
-        position: relative;
-        display: inline-block;
-        width: 60px;
-        height: 34px;
-    }
-
-    #codeEpreuve label input {
-        opacity: 0;
-        width: 0;
-        height: 0;
-    }
-
-    #codeEpreuve span {
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #ccc;
-        transition: .4s;
-    }
-
-    #codeEpreuve span:before {
-        position: absolute;
-        content: "";
-        height: 26px;
-        width: 26px;
-        left: 4px;
-        bottom: 4px;
-        background-color: white;
-        transition: .4s;
-    }
-
-    #codeEpreuve input:checked + span {
-        background-color: black;
-    }
-
-    #codeEpreuve input:focus + span {
-        box-shadow: 0 0 1px black;
-    }
-
-    #codeEpreuve input:checked + span:before {
-        transform: translateX(26px);
-    }
-
-    #codeEpreuve span {
-        border-radius: 34px;
-    }
-
-    #codeEpreuve span:before {
-        border-radius: 50%;
-    }
-
-    #codeEpreuve header div img {
-        display: none;
-    }
-
-    #codeEpreuve header input {
-        display: none;
-    }
-    
-    #codeEpreuve header label {
-        display: none; 
-    }
-    
-    #codeEpreuve header nav {
-        display: none; 
-    }
-    
-    #codeEpreuve header div img {
-        display: none; 
-    }
-    
-    #codeEpreuve header p {
-        display: none; 
-    }
-    
-    #codeEpreuve header ul:nth-of-type(1) {
-        display: none; 
-    }
-    
-    #codeEpreuve header ul:nth-of-type(2) {
-        display: none; 
-    }
-    
-    #codeEpreuve header ul:nth-of-type(1) li {
-        display: none; 
-    }
-    
-    #codeEpreuve header ul:nth-of-type(1) li a {
-        display: none; 
-    }
-}
-
-@media screen and (max-width: 767px)  {
-    #codeEpreuve header h1 {
-        padding: 2em 0;
-    }
-    
-    #codeEpreuve header input {
-        display: none;
-    }
-
-    #codeEpreuve header label {
-        cursor: pointer;
-        display: block;
-        width: 30px;
-        height: 30px;
-        position: fixed;
-        top: 20px;
-        left: 20px;
-        z-index: 2000;
-    }
-
-    #codeEpreuve header label span {
-        display: block;
-        width: 30px;
-        height: 4px;
-        margin: 5px auto;
-        background-color: black;
-        transition: all 0.3s;
-    }
-
-    #codeEpreuve header nav {
-        position: fixed;
-        top: 0;
-        left: -100%;
-        height: 100%;
-        width: 25%;
-        background-color: #E3D2C1;
-        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-        transition: left 0.5s ease;
-        z-index: 1500;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        padding: 20px;
-    }
-
-    #codeEpreuve header div img {
-        width: 40px;
-        margin-left: 80%;
-    }
-
-    #codeEpreuve header p {
-        color: black;
-    }
-
-    #codeEpreuve header ul:nth-of-type(1) {
-        list-style: none;
-        padding: 0;
-        width: 100%;
-        text-align: left;
-        margin-top: 50px;
-    }
-
-    #codeEpreuve header ul:nth-of-type(2) {
-        list-style: none;
-        padding: 0;
-        width: 100%;
-        text-align: left;
-        margin-top: 50px;
-    }
-
-    #codeEpreuve header ul:nth-of-type(1) li {
-        margin: 20px 0;
-        width: 100%;
-    }
-
-    #codeEpreuve header ul:nth-of-type(1) li a {
-        text-decoration: none;
-        font-size: 18px;
-        font-weight: bold;
-        color: black;
-        transition: color 0.3s;
-    }
-
-    #codeEpreuve header ul:nth-of-type(1) li a:hover {
-        color: #007BFF;
-    }
-
-    #codeEpreuve header input:checked ~ nav {
-        left: 0;
-    }
-
-    #codeEpreuve header input:checked ~ label span:nth-child(1) {
-        transform: translateY(9px) rotate(45deg);
-    }
-
-    #codeEpreuve header input:checked ~ label span:nth-child(2) {
-        opacity: 0;
-    }
-
-    #codeEpreuve header input:checked ~ label span:nth-child(3) {
-        transform: translateY(-9px) rotate(-45deg);
-    }
-
-    #codeEpreuve header ul:nth-of-type(1) li {
-        animation: slide-in 0.5s ease both;
-    }
-
-    @keyframes slide-in {
-        from {
-            transform: translateX(-100%);
-            opacity: 0;
-        }
-        to {
-            transform: translateX(0);
-            opacity: 1;
-        }
-    }
-}
 
 /* Main */
 #codeEpreuve main {
