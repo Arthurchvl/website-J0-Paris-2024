@@ -83,4 +83,4 @@ function changerCouleurFond() {
 }
 
 // Ajout de l'événement pour changer la couleur de fond et de texte de la page
-document.getElementById('toggle-background_mls').addEventListener('click', changerCouleurFond);
+document.getElementById('toggle-backgroundEpreuve').addEventListener('click', changerCouleurFond);
