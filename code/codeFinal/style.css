@@ -822,6 +822,16 @@ Caractéristiques de la section palmarès de la page sportif
 #codeDiscipline section:nth-child(4) article:nth-child(5) {
     padding: 1em;
     text-align: justify;
+    background-color: #E3D2C1;
+    transition: transform 1s ease;
+}
+#codeDiscipline section:nth-child(4) article:first-child:hover, 
+#codeDiscipline section:nth-child(4) article:nth-child(2):hover, 
+#codeDiscipline section:nth-child(4) article:nth-child(3):hover, 
+#codeDiscipline section:nth-child(4) article:nth-child(4):hover, 
+#codeDiscipline section:nth-child(4) article:nth-child(5):hover {
+    transform: scale(1.05);
+    z-index: 100;
 }
 
 /************************************************************/
@@ -860,6 +870,13 @@ Caractéristiques de la section palmarès de la page sportif
     gap: 10px;
     padding: 10%;
     place-items: center;
+    transition: transform 1s ease;
+
+}
+#codeDiscipline section:nth-child(5) div>article:last-child:hover, 
+#codeDiscipline section:nth-child(5) div>article:first-child:hover, 
+#codeDiscipline section:nth-child(5) div>article:nth-child(2):hover{
+    transform: scale(1.05);
 }
 #codeDiscipline section:nth-child(5) div article:first-child>img, 
 #codeDiscipline section:nth-child(5) div article:nth-child(2)>img {
@@ -1003,7 +1020,13 @@ Caractéristiques de la section palmarès de la page sportif
 #codeDiscipline section:nth-child(6) table img {
     border-radius: 10px;
 }
-
+#codeDiscipline tbody tr:nth-child(1),
+#codeDiscipline tbody tr:nth-child(2),
+#codeDiscipline tbody tr:nth-child(3),
+#codeDiscipline tbody tr:nth-child(4),
+#codeDiscipline tbody tr:nth-child(5) {
+    transition: transform 1s ease;
+}
 #codeDiscipline tbody tr:nth-child(1):hover,
 #codeDiscipline tbody tr:nth-child(2):hover,
 #codeDiscipline tbody tr:nth-child(3):hover,
