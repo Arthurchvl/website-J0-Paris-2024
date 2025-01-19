@@ -796,10 +796,13 @@ Caractéristiques de la section palmarès de la page sportif
 #codeDiscipline span:before {
     border-radius: 50%;
 }
+<<<<<<< Updated upstream
 
 #codeDiscipline span:before {
     border-radius: 50%;
 }
+=======
+>>>>>>> Stashed changes
 
 
 
@@ -1496,10 +1499,17 @@ Epreuve
         transition: all 0.3s;
     }
 
+<<<<<<< Updated upstream
     #codeEpreuve header div img {
         width: 40px;
         margin-left: 80%;
     }
+=======
+#codeEpreuve header div img {
+    width: 40px;
+    margin-left: 80%;
+}
+>>>>>>> Stashed changes
 
     #codeEpreuve header div img {
         width: 40px;
@@ -2057,6 +2067,7 @@ Page Index
         font-size: 10px;
     }
 }
+<<<<<<< Updated upstream
 
 #codeAcceuil header div {
     display: grid;
@@ -2138,6 +2149,11 @@ Page Index
 
 
 
+=======
+
+
+
+>>>>>>> Stashed changes
 #codeEpreuve img {
     border-radius: 10px;
 }
