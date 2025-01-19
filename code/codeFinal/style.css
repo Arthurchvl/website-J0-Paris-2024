@@ -1846,6 +1846,7 @@ Page Index
     border-radius: 10px;
 }
 
+
 #codeAcceuil figcaption {
     margin-top: 1rem;
     font-size: 0.9rem;
@@ -2003,12 +2004,12 @@ Page Index
     margin: 20px 0;
     background-color: white;
   }
-  th, td {
+#codeAcceuil th, td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
   }
-  th {
+  #codeAcceuil th {
     background-color: #f4f4f4;
   }
 
