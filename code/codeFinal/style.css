@@ -1098,9 +1098,7 @@ Epreuve
 }
 
 #codeEpreuve video {
-    width: 97%;
-    height: 100%;
-    margin: 20px;
+    width: 100%;
 }
 
 #codeEpreuve aside {
@@ -1291,14 +1289,6 @@ Page Index
 #codeAcceuil section:first-of-type h1{
     width: 100%;
     text-align: center;
-}
-
-#codeAcceuil h2 {
-    font-family: "Roboto", sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    width: 100%;
-    text-align: center; 
 }
 
 
