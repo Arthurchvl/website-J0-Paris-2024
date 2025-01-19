@@ -2063,7 +2063,6 @@ Page Index
         font-size: 10px;
     }
 }
-<<<<<<< Updated upstream
 
 #codeAcceuil header div {
     display: grid;
@@ -2078,7 +2077,7 @@ Page Index
     padding-right: 20%;
     padding-top: 0.5%;
     padding-bottom: 0.5%;
-    height: 15%;
+    height: 10%;
 }
 
 #codeAcceuil header div nav {
@@ -2090,66 +2089,161 @@ Page Index
     min-width: 0;
     height: 100%;
 }
-
 #codeAcceuil header div img {
     grid-column: 2;
     grid-row: 1;
+    width: 75%;
+
+  
+}
+#codeAcceuil header div button{
+    grid-column: 3;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
     width: 100%;
+    height: 50%;
 }
 
-#codeAcceuil header>img{
-    width: auto;
-    margin: 0px;
-    padding: 0%;
-}
 
-#codeSportif header div {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 38%;
+/*fond qui apparait*/
+#codeAcceuil main nav {
     position: fixed;
+    top: -20em;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #3E405C, #8386C2);
+    color: white;
+    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    transition: top 0.3s ease;
+    height: 10%;
+    z-index: 3;
+}
+
+#codeAcceuil nav.visible {
+    top: 0;
+}
+
+#codeAcceuil header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    z-index: 10;
+    border-radius: 10px;
+}
+
+#codeAcceuil header nav ul li {
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+#codeAcceuil header nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    display: block;
+}
+
+#codeAcceuil header nav ul li a:hover {
+    background-color: #C0C0C0;
+    border-radius: 10px;
+}
+
+#codeAcceuil header nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #C0C0C0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#codeAcceuil header nav ul li ul li a {
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
+#codeAcceuil header nav ul li ul li a:hover {
+    background-color: white;
+}
+
+#codeAcceuil header nav ul li:hover ul {
+    display: block;
+}
+
+#codeAcceuil header:first-child>img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#codeAcceuil label {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+#codeAcceuil label input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+#codeAcceuil span {
+    position: absolute;
+    cursor: pointer;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 101;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
-    height: 15%;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
 }
 
-#codeSportif header div nav {
-    grid-column: 1;
-    grid-row: 1;
-    justify-self: center;
-    align-self: center;
-    max-width: 100%;
-    min-width: 0;
-    height: 100%;
+#codeAcceuil span:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
 }
 
-#codeSportif header div img {
-    grid-column: 2;
-    grid-row: 1;
-    width: 100%;
+#codeAcceuil input:checked + span {
+    background-color: black;
 }
 
-#codesportif header>img{
-    width: auto;
-    margin: 0px;
-    padding: 0%;
+#codeAcceuil input:focus + span {
+    box-shadow: 0 0 1px black;
+}
+
+#codeAcceuil input:checked + span:before {
+    transform: translateX(26px);
+}
+
+#codeAcceuil span {
+    border-radius: 34px;
+}
+
+#codeAcceuil span:before {
+    border-radius: 50%;
 }
 
 
 
 
 
-=======
-
-
-
->>>>>>> Stashed changes
 #codeEpreuve img {
     border-radius: 10px;
 }
