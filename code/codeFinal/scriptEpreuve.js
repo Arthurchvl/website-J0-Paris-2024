@@ -22,9 +22,15 @@ function changerCouleurFondArticles(isBlackBackground) {
 
 // Fonction pour changer la couleur de fond et de texte de la barre de navigation
 function changerCouleurFondNavigation(isBlackBackground) {
-    const nav = document.querySelector('nav');
-    nav.style.backgroundColor = isBlackBackground ? COULEUR_FOND_BEIGE : COULEUR_FOND_GRIS;
-    nav.style.color = isBlackBackground ? COULEUR_TEXTE_NOIR : COULEUR_TEXTE_BLANC;
+    const navs = document.querySelectorAll('nav');
+    const navCount = navs.length;
+
+    navs.forEach((nav, index) => {
+        if (index > 0 && index < navCount - 3) { // Ignorer le premier nav et les trois derniers
+            nav.style.backgroundColor = isBlackBackground ? COULEUR_FOND_BEIGE : COULEUR_FOND_GRIS;
+            nav.style.color = isBlackBackground ? COULEUR_TEXTE_NOIR : COULEUR_TEXTE_BLANC;
+        }
+    });
 }
 
 // Fonction pour changer la couleur de fond et de texte du dernier div
@@ -83,7 +89,7 @@ function changerCouleurFond() {
 }
 
 // Ajout de l'événement pour changer la couleur de fond et de texte de la page
-document.getElementById('toggle-background_mls').addEventListener('click', changerCouleurFond);
+document.getElementById('toggle-backgroundEpreuve').addEventListener('click', changerCouleurFond);
 
 
 // Récupérer la barre de navigation
