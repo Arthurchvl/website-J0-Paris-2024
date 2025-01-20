@@ -344,14 +344,13 @@ Caractéristiques des sections du main de la page sportif
 /*********************************************
 Caractéristiques des vidéos de la page sportif
 *********************************************/
-#codeSportif video {
+#codeSportif iframe {
     display: flex;
     align-items: center;
     align-content: center;
-    width: 400px;
-    height: auto;
-    margin: 20px;
-    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
 }
 
 #codeSportif main>section:nth-of-type(4) li{
