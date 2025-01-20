@@ -77,6 +77,15 @@ header nav ul li a {
     padding: 10px 20px;
     display: block;
 }
+
+header nav ul li {
+    transition: transform 0.3s ease;
+}
+
+header nav ul li:hover {
+    transform: translateY(-5px);
+}
+
 header nav ul li a:hover {
     background-color: #C0C0C0;
     border-radius: 10px;
@@ -1110,6 +1119,11 @@ Epreuve
 
 #codeEpreuve img {
     border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#codeEpreuve img:hover {
+    transform: scale(1.05);
 }
 
 #codeEpreuve video {
