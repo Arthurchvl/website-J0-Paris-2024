@@ -811,12 +811,11 @@ Caractéristiques de la section palmarès de la page sportif
     border-radius: 10px;
     padding: 5px;
     background: linear-gradient(to right, #3E405C, #8386C2);
-    -webkit-mask: 
+    mask: 
         linear-gradient(#fff 0 0) content-box, 
         linear-gradient(#fff 0 0) border-box;
     mask-composite: exclude;
     z-index: 20;
-
 }
 #codeDiscipline section:nth-child(4) div>article:last-child {
     grid-column: 1 / -1;
@@ -839,7 +838,9 @@ Caractéristiques de la section palmarès de la page sportif
 #codeDiscipline section:nth-child(4) article:nth-child(5):hover {
     transform: scale(1.05);
 }
-
+#codeDiscipline h1 {
+    margin: 1em 0;
+}
 /************************************************************/
 /*     Discipline - Partie 4 : epreuve/catégorie            */
 /************************************************************/
@@ -858,7 +859,7 @@ Caractéristiques de la section palmarès de la page sportif
     border-radius: 10px;
     padding: 5px;
     background: linear-gradient(to bottom, #3E405C, #8386C2);
-    -webkit-mask: 
+    mask: 
         linear-gradient(#fff 0 0) content-box, 
         linear-gradient(#fff 0 0) border-box;
     mask-composite: exclude;
@@ -1040,7 +1041,7 @@ Caractéristiques de la section palmarès de la page sportif
 #codeDiscipline tbody tr:nth-child(3):hover,
 #codeDiscipline tbody tr:nth-child(4):hover,
 #codeDiscipline tbody tr:nth-child(5):hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 /************************************************************/
@@ -1081,6 +1082,10 @@ Caractéristiques de la section palmarès de la page sportif
     width: 100%;
     border-radius: 10px;
     border: none;
+    transition: transform 0.5s ease;
+}
+#codeDiscipline section:nth-child(7) div iframe:hover {
+    transform: scale(1.05);
 }
 
 /*********************************************************************************************************************************/
