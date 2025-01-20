@@ -430,8 +430,7 @@ Caractéristiques de la section actualités + réseaux sociaux de la page sporti
 #codeSportif main section:last-child aside a {
     display: inline-block;
     width: 25%;
-    margin: 0px;
-    padding: 0px;
+    
     text-decoration: none;
     color: black;
     align-items: center;
@@ -443,7 +442,7 @@ Caractéristiques de la section actualités + réseaux sociaux de la page sporti
 }
 
 #codeSportif main section:last-child img {
-    width: 100px;
+    width: 75px;
     height: auto;
     padding: 20px;
 }
@@ -809,7 +808,7 @@ Caractéristiques de la section palmarès de la page sportif
     bottom: 0;
     border-radius: 10px;
     padding: 5px;
-    background: linear-gradient(to right, #3E405C, #8386C2);
+    background: linear-gradient(#3E405C, #8386C2);
     mask: 
         linear-gradient(#fff 0 0) content-box, 
         linear-gradient(#fff 0 0) border-box;
@@ -828,6 +827,7 @@ Caractéristiques de la section palmarès de la page sportif
     text-align: justify;
     background-color: #E3D2C1;
     transition: transform 0.5s ease;
+    border-radius: 10px;
 
 }
 #codeDiscipline section:nth-child(4) article:first-child:hover, 
