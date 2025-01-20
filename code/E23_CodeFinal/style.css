@@ -50,7 +50,7 @@ main nav {
     background: linear-gradient(to right, #3E405C, #8386C2);
     color: white;
     box-shadow: 0 4px 50px rgba(0, 0, 0, 0.5);
-    z-index: 10;
+    z-index: 30;
     transition: top 0.3s ease;
     height: 10%;
     z-index: 3;
@@ -156,7 +156,7 @@ span:before {
 
 
 /************************************************************/
-/*     Toute les pages - Globale                            */
+/*     Toute les pages - Global                             */
 /************************************************************/
 
 body {
@@ -230,6 +230,14 @@ footer aside {
     justify-content: space-between;
 }
 
+footer>div>a img:hover {
+    transform: scale(1.2);
+}
+footer>div>a img {
+    transition: transform 0.5s ease;
+    vertical-align: middle;
+
+}
 footer aside>img {
     width: 150px;
     height: auto;
@@ -241,10 +249,6 @@ footer nav {
     text-align: left;
 }
 
-footer aside a {
-    width: 200px;
-    height: 200px;
-}
 
 footer nav h3 {
     margin-bottom: 10px;
@@ -264,8 +268,9 @@ footer div>a {
     width: 24px;
     height: 24px;
     margin: 0 10px;
-    vertical-align: middle;
+    
     text-decoration: none;
+
 }
 
 footer div {
@@ -615,7 +620,7 @@ Caractéristiques de la section palmarès de la page sportif
 /*********************************************************************************************************************************/
 
 /************************************************************/
-/*     Discipline - Globale                                 */
+/*     Discipline - Global                                  */
 /************************************************************/
 
 #codeDiscipline section:nth-child(2)>img,
@@ -810,6 +815,8 @@ Caractéristiques de la section palmarès de la page sportif
         linear-gradient(#fff 0 0) content-box, 
         linear-gradient(#fff 0 0) border-box;
     mask-composite: exclude;
+    z-index: 20;
+
 }
 #codeDiscipline section:nth-child(4) div>article:last-child {
     grid-column: 1 / -1;
@@ -822,7 +829,8 @@ Caractéristiques de la section palmarès de la page sportif
     padding: 1em;
     text-align: justify;
     background-color: #E3D2C1;
-    transition: transform 1s ease;
+    transition: transform 0.5s ease;
+
 }
 #codeDiscipline section:nth-child(4) article:first-child:hover, 
 #codeDiscipline section:nth-child(4) article:nth-child(2):hover, 
@@ -830,7 +838,6 @@ Caractéristiques de la section palmarès de la page sportif
 #codeDiscipline section:nth-child(4) article:nth-child(4):hover, 
 #codeDiscipline section:nth-child(4) article:nth-child(5):hover {
     transform: scale(1.05);
-    z-index: 100;
 }
 
 /************************************************************/
@@ -855,6 +862,8 @@ Caractéristiques de la section palmarès de la page sportif
         linear-gradient(#fff 0 0) content-box, 
         linear-gradient(#fff 0 0) border-box;
     mask-composite: exclude;
+    z-index: 20;
+
 }
 #codeDiscipline section:nth-child(5)>div {
     display: grid;
@@ -869,7 +878,7 @@ Caractéristiques de la section palmarès de la page sportif
     gap: 10px;
     padding: 10%;
     place-items: center;
-    transition: transform 1s ease;
+    transition: transform 0.5s ease;
 
 }
 #codeDiscipline section:nth-child(5) div>article:last-child:hover, 
@@ -1428,10 +1437,6 @@ Page Index
     #codeAcceuil section {
         flex-direction: column;
         padding: 1.5em;
-    }
-
-    #codeAcceuil footer aside {
-        flex-direction: column;
     }
 
     #codeAcceuil .card {
