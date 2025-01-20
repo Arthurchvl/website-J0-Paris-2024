@@ -90,10 +90,10 @@ document.getElementById('toggle-backgroundEpreuve').addEventListener('click', ch
 
 
 // Récupérer la barre de navigation
-const nav = document.querySelector("codeEpreuve main nav");
+const nav = document.querySelector("main nav");
 
 // Récupérer la hauteur de l'image (le header)
-const headerHeight = document.querySelector("codeEpreuve header:first-child img").offsetHeight;
+const headerHeight = document.querySelector("header:first-child img").offsetHeight;
 
 // Ajouter une classe "visible" lorsque l'utilisateur défile au-delà de l'image
 window.addEventListener("scroll", () => {
