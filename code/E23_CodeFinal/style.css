@@ -811,7 +811,7 @@ Caractéristiques de la section palmarès de la page sportif
     border-radius: 10px;
     padding: 5px;
     background: linear-gradient(to right, #3E405C, #8386C2);
-    -webkit-mask: 
+    mask: 
         linear-gradient(#fff 0 0) content-box, 
         linear-gradient(#fff 0 0) border-box;
     mask-composite: exclude;
@@ -858,7 +858,7 @@ Caractéristiques de la section palmarès de la page sportif
     border-radius: 10px;
     padding: 5px;
     background: linear-gradient(to bottom, #3E405C, #8386C2);
-    -webkit-mask: 
+    mask: 
         linear-gradient(#fff 0 0) content-box, 
         linear-gradient(#fff 0 0) border-box;
     mask-composite: exclude;
@@ -1415,7 +1415,9 @@ Page Index
     margin-bottom: 2rem;
 }
 
-
+#Parcours2>img:last-of-type {
+    width: 100%;
+}
 
 #codeAcceuil h2 {
     font-family: "Roboto", sans-serif;
@@ -1424,7 +1426,6 @@ Page Index
     width: 100%;
     text-align: center; 
 }
-
 
 #codeAcceuil table {
     width: 100%;
@@ -1441,7 +1442,7 @@ Page Index
     background-color: #f4f4f4;
   }
 
-  @media (max-width: 1024px) {
+@media (max-width: 1024px) {
     #codeAcceuil section {
         flex-direction: column;
         padding: 1.5em;
