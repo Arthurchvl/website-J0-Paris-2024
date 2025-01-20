@@ -344,14 +344,13 @@ Caractéristiques des sections du main de la page sportif
 /*********************************************
 Caractéristiques des vidéos de la page sportif
 *********************************************/
-#codeSportif video {
+#codeSportif iframe {
     display: flex;
     align-items: center;
     align-content: center;
-    width: 400px;
-    height: auto;
-    margin: 20px;
-    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
 }
 
 #codeSportif main>section:nth-of-type(4) li{
@@ -1106,7 +1105,7 @@ Epreuve
     border-radius: 10px;
     text-align: center;
     padding: 0.5em;
-    margin: 20px;
+    margin: 1%;
 }
 
 #codeEpreuve img {
@@ -1118,12 +1117,17 @@ Epreuve
 }
 
 #codeEpreuve aside {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 1%;
+    margin-right: 1%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     grid-auto-rows: minmax(100px, auto);
+}
+
+#codeEpreuve aside:hover {
+    transform: scale(1.00001);
+    vertical-align: middle;
 }
 
 #codeEpreuve table {
@@ -1415,7 +1419,9 @@ Page Index
     margin-bottom: 2rem;
 }
 
-
+#Parcours2>img:last-of-type {
+    width: 100%;
+}
 
 #codeAcceuil h2 {
     font-family: "Roboto", sans-serif;
@@ -1424,7 +1430,6 @@ Page Index
     width: 100%;
     text-align: center; 
 }
-
 
 #codeAcceuil table {
     width: 100%;
@@ -1441,7 +1446,7 @@ Page Index
     background-color: #f4f4f4;
   }
 
-  @media (max-width: 1024px) {
+@media (max-width: 1024px) {
     #codeAcceuil section {
         flex-direction: column;
         padding: 1.5em;
