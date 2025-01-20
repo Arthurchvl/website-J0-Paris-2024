@@ -77,6 +77,12 @@ function changerCouleurFond() {
     changerCouleurFondPage(isBlackBackground);
     changerCouleurFondArticles(isBlackBackground);
     changerCouleurFondNavigation(isBlackBackground);
+
+    const spans = document.querySelectorAll('header label span');
+    spans.forEach(span => {
+        span.style.backgroundColor = isBlackBackground ? COULEUR_TEXTE_NOIR : COULEUR_TEXTE_BLANC;
+    });
+
     changerCouleurFondDernierDiv(isBlackBackground);
     changerCouleurFondCompetition(isBlackBackground);
     changerCouleurFondRecord(isBlackBackground);
