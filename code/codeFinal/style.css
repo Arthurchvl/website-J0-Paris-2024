@@ -680,7 +680,11 @@ Caractéristiques de la section palmarès de la page sportif
 /*     header     */
 /******************/
 
+<<<<<<< HEAD
 header div {
+=======
+#codeDiscipline header div {
+>>>>>>> parent of c3fa760 (depot en retard fichier avec vidéos)
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 38%;
@@ -695,7 +699,12 @@ header div {
     padding-bottom: 0.5%;
     height: 15%;
 }
+<<<<<<< HEAD
 header div nav {
+=======
+
+#codeDiscipline header div nav {
+>>>>>>> parent of c3fa760 (depot en retard fichier avec vidéos)
     grid-column: 1;
     grid-row: 1;
     justify-self: center;
@@ -704,14 +713,22 @@ header div nav {
     min-width: 0;
     height: 100%;
 }
+<<<<<<< HEAD
 header div img {
+=======
+#codeDiscipline header div img {
+>>>>>>> parent of c3fa760 (depot en retard fichier avec vidéos)
     grid-column: 2;
     grid-row: 1;
     width: 75%;
 
   
 }
+<<<<<<< HEAD
 header div button{
+=======
+#codeDiscipline header div button{
+>>>>>>> parent of c3fa760 (depot en retard fichier avec vidéos)
     grid-column: 3;
     grid-row: 1;
     display: flex;
@@ -723,7 +740,11 @@ header div button{
 
 
 /*fond qui apparait*/
+<<<<<<< HEAD
 main nav {
+=======
+#codeDiscipline main nav {
+>>>>>>> parent of c3fa760 (depot en retard fichier avec vidéos)
     position: fixed;
     top: -20em;
     left: 0;
@@ -737,11 +758,19 @@ main nav {
     z-index: 3;
 }
 
+<<<<<<< HEAD
 main>nav.visible {
     top: 0;
 }
 
 header nav ul {
+=======
+#codeDiscipline nav.visible {
+    top: 0;
+}
+
+#codeDiscipline header nav ul {
+>>>>>>> parent of c3fa760 (depot en retard fichier avec vidéos)
     list-style: none;
     margin: 0;
     padding: 0;
@@ -750,26 +779,42 @@ header nav ul {
     border-radius: 10px;
 }
 
+<<<<<<< HEAD
 header nav ul li {
+=======
+#codeDiscipline header nav ul li {
+>>>>>>> parent of c3fa760 (depot en retard fichier avec vidéos)
     position: relative;
     background-color: white;
     border-radius: 10px;
 
 }
 
+<<<<<<< HEAD
 header nav ul li a {
+=======
+#codeDiscipline header nav ul li a {
+>>>>>>> parent of c3fa760 (depot en retard fichier avec vidéos)
     text-decoration: none;
     color: black;
     padding: 10px 20px;
     display: block;
 }
 
+<<<<<<< HEAD
 header nav ul li a:hover {
+=======
+#codeDiscipline header nav ul li a:hover {
+>>>>>>> parent of c3fa760 (depot en retard fichier avec vidéos)
     background-color: #C0C0C0;
     border-radius: 10px;
 }
 
+<<<<<<< HEAD
 header nav ul li ul {
+=======
+#codeDiscipline header nav ul li ul {
+>>>>>>> parent of c3fa760 (depot en retard fichier avec vidéos)
     display: none;
     position: absolute;
     top: 100%;
@@ -781,11 +826,16 @@ header nav ul li ul {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
+<<<<<<< HEAD
 header nav ul li ul li a {
+=======
+#codeDiscipline header nav ul li ul li a {
+>>>>>>> parent of c3fa760 (depot en retard fichier avec vidéos)
     padding: 10px 20px;
     white-space: nowrap;
 }
 
+<<<<<<< HEAD
 header nav ul li ul li a:hover {
     background-color: white;
 }
@@ -795,26 +845,49 @@ header nav ul li:hover ul {
 }
 
 header:first-child>img {
+=======
+#codeDiscipline header nav ul li ul li a:hover {
+    background-color: white;
+}
+
+#codeDiscipline header nav ul li:hover ul {
+    display: block;
+}
+
+#codeDiscipline header:first-child>img {
+>>>>>>> parent of c3fa760 (depot en retard fichier avec vidéos)
     width: 100%;
     height: auto;
     display: block;
 }
 
 
+<<<<<<< HEAD
 label {
+=======
+#codeDiscipline label {
+>>>>>>> parent of c3fa760 (depot en retard fichier avec vidéos)
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
 }
 
+<<<<<<< HEAD
 label input {
+=======
+#codeDiscipline label input {
+>>>>>>> parent of c3fa760 (depot en retard fichier avec vidéos)
     opacity: 0;
     width: 0;
     height: 0;
 }
 
+<<<<<<< HEAD
 span {
+=======
+#codeDiscipline span {
+>>>>>>> parent of c3fa760 (depot en retard fichier avec vidéos)
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -825,7 +898,11 @@ span {
     transition: .4s;
 }
 
+<<<<<<< HEAD
 span:before {
+=======
+#codeDiscipline span:before {
+>>>>>>> parent of c3fa760 (depot en retard fichier avec vidéos)
     position: absolute;
     content: "";
     height: 26px;
@@ -836,6 +913,7 @@ span:before {
     transition: .4s;
 }
 
+<<<<<<< HEAD
 input:checked + span {
     background-color: black;
 }
@@ -853,13 +931,36 @@ span {
 }
 
 span:before {
+=======
+#codeDiscipline input:checked + span {
+    background-color: black;
+}
+
+#codeDiscipline input:focus + span {
+    box-shadow: 0 0 1px black;
+}
+
+#codeDiscipline input:checked + span:before {
+    transform: translateX(26px);
+}
+
+#codeDiscipline span {
+    border-radius: 34px;
+}
+
+#codeDiscipline span:before {
+>>>>>>> parent of c3fa760 (depot en retard fichier avec vidéos)
     border-radius: 50%;
 }
 
 
+<<<<<<< HEAD
 /************************************************************/
 /*     Toute les pages - Globale                            */
 /************************************************************/
+=======
+
+>>>>>>> parent of c3fa760 (depot en retard fichier avec vidéos)
 
 
 
@@ -1031,7 +1132,7 @@ span:before {
 
 
 /************************************************************/
-/*     Discipline - Partie 1 : origine judo                 */
+/*     Discipline - Partie 1 : origine judo               */
 /************************************************************/
 
 #codeDiscipline section:nth-child(2)>div {
@@ -1349,9 +1450,243 @@ Epreuve
     padding: 0;
 }
 
+<<<<<<< HEAD
 #codeEpreuve header nav ul li {
 
     background-color: #5a5d86;
+=======
+/* Header */
+#codeEpreuve header {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#codeEpreuve header h1 {
+    background-image: url("images/fond_header.webp");
+    background-size: cover;
+    background-position: center;
+    padding: 6em 0;
+    margin: 0;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 767px){
+    #codeEpreuve label {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+
+    #codeEpreuve label input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    #codeEpreuve span {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: .4s;
+    }
+
+    #codeEpreuve span:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        transition: .4s;
+    }
+
+    #codeEpreuve input:checked + span {
+        background-color: black;
+    }
+
+    #codeEpreuve input:focus + span {
+        box-shadow: 0 0 1px black;
+    }
+
+    #codeEpreuve input:checked + span:before {
+        transform: translateX(26px);
+    }
+
+    #codeEpreuve span {
+        border-radius: 34px;
+    }
+
+    #codeEpreuve span:before {
+        border-radius: 50%;
+    }
+
+    #codeEpreuve header div img {
+        display: none;
+    }
+
+    #codeEpreuve header input {
+        display: none;
+    }
+    
+    #codeEpreuve header label {
+        display: none; 
+    }
+    
+    #codeEpreuve header nav {
+        display: none; 
+    }
+    
+    #codeEpreuve header div img {
+        display: none; 
+    }
+    
+    #codeEpreuve header p {
+        display: none; 
+    }
+    
+    #codeEpreuve header ul:nth-of-type(1) {
+        display: none; 
+    }
+    
+    #codeEpreuve header ul:nth-of-type(2) {
+        display: none; 
+    }
+    
+    #codeEpreuve header ul:nth-of-type(1) li {
+        display: none; 
+    }
+    
+    #codeEpreuve header ul:nth-of-type(1) li a {
+        display: none; 
+    }
+}
+
+@media screen and (max-width: 767px)  {
+    #codeEpreuve header h1 {
+        padding: 2em 0;
+    }
+    
+    #codeEpreuve header input {
+        display: none;
+    }
+
+    #codeEpreuve header label {
+        cursor: pointer;
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 2000;
+    }
+
+    #codeEpreuve header label span {
+        display: block;
+        width: 30px;
+        height: 4px;
+        margin: 5px auto;
+        background-color: black;
+        transition: all 0.3s;
+    }
+
+    #codeEpreuve header nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100%;
+        width: 25%;
+        background-color: #E3D2C1;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        transition: left 0.5s ease;
+        z-index: 1500;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 20px;
+    }
+
+    #codeEpreuve header div img {
+        width: 40px;
+        margin-left: 80%;
+    }
+
+    #codeEpreuve header p {
+        color: black;
+    }
+
+    #codeEpreuve header ul:nth-of-type(1) {
+        list-style: none;
+        padding: 0;
+        width: 100%;
+        text-align: left;
+        margin-top: 50px;
+    }
+
+    #codeEpreuve header ul:nth-of-type(2) {
+        list-style: none;
+        padding: 0;
+        width: 100%;
+        text-align: left;
+        margin-top: 50px;
+    }
+
+    #codeEpreuve header ul:nth-of-type(1) li {
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    #codeEpreuve header ul:nth-of-type(1) li a {
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+        transition: color 0.3s;
+    }
+
+    #codeEpreuve header ul:nth-of-type(1) li a:hover {
+        color: #007BFF;
+    }
+
+    #codeEpreuve header input:checked ~ nav {
+        left: 0;
+    }
+
+    #codeEpreuve header input:checked ~ label span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    #codeEpreuve header input:checked ~ label span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #codeEpreuve header input:checked ~ label span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    #codeEpreuve header ul:nth-of-type(1) li {
+        animation: slide-in 0.5s ease both;
+    }
+
+    @keyframes slide-in {
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+>>>>>>> parent of c3fa760 (depot en retard fichier avec vidéos)
 }
 
 /* Main */
@@ -1554,7 +1889,11 @@ Page Index
 
 #codeAcceuil body {
     font-family: Arial, sans-serif;
+<<<<<<< HEAD
     margin: 0 auto;
+=======
+    margin: 0;
+>>>>>>> parent of c3fa760 (depot en retard fichier avec vidéos)
     padding: 0;
     background-color: #ffffff;
     color: #333;
@@ -1618,7 +1957,6 @@ Page Index
     max-width: 100%;
     border-radius: 10px;
 }
-
 
 #codeAcceuil figcaption {
     margin-top: 1rem;
@@ -1777,12 +2115,12 @@ Page Index
     margin: 20px 0;
     background-color: white;
   }
-#codeAcceuil th, td {
+  th, td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
   }
-  #codeAcceuil th {
+  th {
     background-color: #f4f4f4;
   }
 
@@ -1838,6 +2176,7 @@ Page Index
     }
 }
 
+
 #codeAcceuil header div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1851,7 +2190,7 @@ Page Index
     padding-right: 20%;
     padding-top: 0.5%;
     padding-bottom: 0.5%;
-    height: 10%;
+    height: 15%;
 }
 
 #codeAcceuil header div nav {
@@ -1863,153 +2202,210 @@ Page Index
     min-width: 0;
     height: 100%;
 }
+
 #codeAcceuil header div img {
     grid-column: 2;
     grid-row: 1;
-    width: 80%;
-
-  
-}
-#codeAcceuil header div button{
-    grid-column: 3;
-    grid-row: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
     width: 100%;
-    height: 50%;
 }
 
+#codeAcceuil header>img{
+    width: auto;
+    margin: 0px;
+    padding: 0%;
+}
 
-/*fond qui apparait*/
-#codeAcceuil main nav {
+#codeSportif header div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 38%;
     position: fixed;
     top: -20em;
     left: 0;
+    right: 0;
+    z-index: 101;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    height: 15%;
+}
+
+#codeSportif header div nav {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+    max-width: 100%;
+    min-width: 0;
+    height: 100%;
+}
+
+#codeSportif header div img {
+    grid-column: 2;
+    grid-row: 1;
     width: 100%;
-    background: linear-gradient(to right, #3E405C, #8386C2);
-    color: white;
-    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.5);
-    z-index: 10;
-    transition: top 0.3s ease;
-    height: 10%;
-    z-index: 3;
 }
 
-#codeAcceuil nav.visible {
-    top: 0;
+#codesportif header>img{
+    width: auto;
+    margin: 0px;
+    padding: 0%;
 }
 
-#codeAcceuil header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    z-index: 10;
+
+
+
+
+
+#codeEpreuve img {
     border-radius: 10px;
 }
 
-#codeAcceuil header nav ul li {
-    position: relative;
-    background-color: white;
-    border-radius: 10px;
-
+#codeEpreuve video {
+    width: 97%;
+    height: 100%;
+    margin: 20px;
 }
 
-#codeAcceuil header nav ul li a {
-    text-decoration: none;
+#codeEpreuve aside {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+/* Styles pour les éléments de la grille */
+#codeEpreuve aside > div {
+    border-radius: 10px;
+    text-align: center;
     color: black;
-    padding: 10px 20px;
-    display: block;
 }
 
-#codeAcceuil header nav ul li a:hover {
-    background-color: #C0C0C0;
-    border-radius: 10px;
+#codeEpreuve aside > div:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: #E3D2C1;
 }
 
-#codeAcceuil header nav ul li ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #C0C0C0;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+#codeEpreuve aside > div:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
 }
 
-#codeAcceuil header nav ul li ul li a {
-    padding: 10px 20px;
-    white-space: nowrap;
+@media screen and (max-width: 767px)  { 
+    #codeEpreuve aside {
+        grid-template-columns: 1fr; 
+    }
+    #codeEpreuve aside > div:nth-child(2) {
+        grid-column: 1;
+        grid-row: 2;
+    }
 }
 
-#codeAcceuil header nav ul li ul li a:hover {
-    background-color: white;
+#codeEpreuve aside > div:nth-child(2) img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
-#codeAcceuil header nav ul li:hover ul {
-    display: block;
+@media screen and (max-width: 767px) {
+    #codeEpreuve aside > div:nth-child(2) img {
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+    }
 }
 
-#codeAcceuil header:first-child>img {
+#codeEpreuve main > div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     width: 100%;
     height: auto;
-    display: block;
 }
 
-#codeAcceuil label {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
+#codeEpreuve main > div:nth-of-type(2) img:first-of-type {
+    height: 100%;
+    width: 50%;
 }
 
-#codeAcceuil label input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+#codeEpreuve main > div:nth-of-type(2) img:last-of-type {
+    height: 50%;
 }
 
-#codeAcceuil span {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: .4s;
+#codeEpreuve main > div:nth-of-type(2) article {
+    height: 50%;
 }
 
-#codeAcceuil span:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
+#codeEpreuve main > section:nth-of-type(4) {
     background-color: white;
-    transition: .4s;
+    display: grid;
+    padding: 0;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
 }
 
-#codeAcceuil input:checked + span {
-    background-color: black;
+#codeEpreuve main > section:nth-of-type(4) img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
 }
 
-#codeAcceuil input:focus + span {
-    box-shadow: 0 0 1px black;
+@media screen and (max-width: 767px) {
+    #codeEpreuve main > section:nth-of-type(4) img {
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+    }
 }
 
-#codeAcceuil input:checked + span:before {
-    transform: translateX(26px);
+#codeEpreuve main > section:nth-of-type(4) > div {
+    border-radius: 10px;
+    text-align: center;
+    color: black;
 }
 
-#codeAcceuil span {
-    border-radius: 34px;
+#codeEpreuve main > section:nth-of-type(4) > div:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1 / 3;
 }
 
-#codeAcceuil span:before {
-    border-radius: 50%;
+#codeEpreuve main > section:nth-of-type(4) > div:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: #E3D2C1;
+}
+
+#codeEpreuve main > section:nth-of-type(4) > div:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+@media screen and (max-width: 767px)  { 
+    #codeEpreuve main > section:nth-of-type(4) {
+        grid-template-columns: 1fr; 
+    }
+
+    #codeEpreuve main > section:nth-of-type(4) > div:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    #codeEpreuve main > section:nth-of-type(4) > div:nth-child(2) {
+        grid-column: 1;
+        grid-row: 2;
+        background-color: #E3D2C1;
+    }
+    
+    #codeEpreuve main > section:nth-of-type(4) > div:nth-child(3) {
+        grid-column: 1;
+        grid-row: 3;
+    }
 }
